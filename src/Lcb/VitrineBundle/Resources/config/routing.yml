@@ -1,0 +1,35 @@
+lcb_accueil:
+    path:     /
+    defaults: { _controller: LcbVitrineBundle:Default:accueil }
+
+lcb_news:
+    path:     /news
+    defaults: { _controller: LcbVitrineBundle:Default:news }
+
+lcb_projet:
+    path:     /projet
+    defaults: { _controller: LcbVitrineBundle:Default:projet }
+
+lcb_boutique:
+    path:     /boutique
+    defaults: { _controller: LcbVitrineBundle:Default:boutique }
+
+lcb_batars:
+    path:     /les_batars
+    defaults: { _controller: LcbVitrineBundle:Default:batars }
+
+lcb_soute:
+    path:     /la_soute
+    defaults: {_controller: LcbVitrineBundle:Default:soute }
+
+lcb_photos:
+    path:     /photos
+    defaults: { _controller:LcbVitrineBundle:Default:photos }
+
+lcb_article:
+    path:     /article/{id}
+    defaults: { _controller:LcbVitrineBundle:Default:photos }
+
+lcb_contact:
+    path:     /contact
+    defaults: { _controller:LcbVitrineBundle:Default:contact }

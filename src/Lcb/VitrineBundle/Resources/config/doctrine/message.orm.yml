@@ -1,0 +1,25 @@
+Lcb\VitrineBundle\Entity\message:
+    type: entity
+    table: null
+    repositoryClass: Lcb\VitrineBundle\Entity\messageRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        nom:
+            type: string
+            length: 255
+        prenom:
+            type: string
+            length: 255
+        date:
+            type: datetime
+        mail:
+            type: string
+            length: 255
+        text:
+            type: text
+    lifecycleCallbacks: {  }

@@ -1,0 +1,5 @@
+_assetic:
+    resource: .
+    type: assetic
+_app:
+    resource: /home/baulieu/Documents/dev/compagnie/siteLaCompagnie3/siteLaCompagnie/app/config/routing_dev.yml

@@ -1,0 +1,7 @@
+lcb_vitrine:
+    resource: "@LcbVitrineBundle/Resources/config/routing.yml"
+    prefix:   /
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
