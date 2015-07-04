@@ -25,7 +25,7 @@ class DefaultController extends Controller
 		* -> youtube
 		* -> twitter
 		**/
-		return $this->render('LcbVitrineBundle:Default:index-bootstrap.html.twig');
+		return $this->render('LcbVitrineBundle:Default:accueil.html.twig');
 	}
 
 	public function newsAction()
