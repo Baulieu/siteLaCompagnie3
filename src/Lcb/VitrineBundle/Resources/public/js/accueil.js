@@ -6,5 +6,5 @@
 * */
 
 $(document).ready(function(){
-    $('.secondPart').parallax("center", 0, 1, true);
+    $('#secondPart').parallax("50%", 0.7);
 })

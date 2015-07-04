@@ -55,6 +55,7 @@ class __TwigTemplate_ddbbe92b248a7dfec47203c565c5fb78ce2f30d1df3ec2b7e61cd6e182e
         <script src=\"https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js\"></script>
     <![endif]-->
 
+
 </head>
 
 <body>
@@ -77,31 +78,31 @@ class __TwigTemplate_ddbbe92b248a7dfec47203c565c5fb78ce2f30d1df3ec2b7e61cd6e182e
                 <ul class=\"nav navbar-nav navbar-right\">
                     <li>
                         <a href=\"";
-        // line 52
+        // line 53
         echo $this->env->getExtension('routing')->getPath("lcb_news");
         echo "\">Les News</a>
                     </li>
                     <li>
                         <a href=\"";
-        // line 55
+        // line 56
         echo $this->env->getExtension('routing')->getPath("lcb_projet");
         echo "\">Le Projet</a>
                     </li>
                     <li>
                         <a href=\"";
-        // line 58
+        // line 59
         echo $this->env->getExtension('routing')->getPath("lcb_boutique");
         echo "\">La Boutique</a>
                     </li>
                     <li>
                         <a href=\"";
-        // line 61
+        // line 62
         echo $this->env->getExtension('routing')->getPath("lcb_batars");
         echo "\">Les Bátars</a>
                     </li>
                     <li>
                         <a href=\"";
-        // line 64
+        // line 65
         echo $this->env->getExtension('routing')->getPath("lcb_contact");
         echo "\">Contact</a>
                     </li>
@@ -160,7 +161,7 @@ class __TwigTemplate_ddbbe92b248a7dfec47203c565c5fb78ce2f30d1df3ec2b7e61cd6e182e
                 </div>
                 <div class=\"col-lg-5 col-lg-offset-2 col-sm-6\">
                     <img class=\"img-responsive\" src=\"";
-        // line 120
+        // line 121
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/lcbvitrine/img/ipad.png"), "html", null, true);
         echo "\" alt=\"\">
                 </div>
@@ -184,7 +185,7 @@ class __TwigTemplate_ddbbe92b248a7dfec47203c565c5fb78ce2f30d1df3ec2b7e61cd6e182e
                 </div>
                 <div class=\"col-lg-5 col-sm-pull-6  col-sm-6\">
                     <!--<img class=\"img-responsive\" src=\"";
-        // line 141
+        // line 142
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/lcbvitrine/img/dog.png"), "html", null, true);
         echo "\" alt=\"\">-->
                 </div>
@@ -209,7 +210,7 @@ class __TwigTemplate_ddbbe92b248a7dfec47203c565c5fb78ce2f30d1df3ec2b7e61cd6e182e
                 </div>
                 <div class=\"col-lg-5 col-lg-offset-2 col-sm-6\">
                     <img class=\"img-responsive\" src=\"";
-        // line 163
+        // line 164
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/lcbvitrine/img/phones.png"), "html", null, true);
         echo "\" alt=\"\">
                 </div>
@@ -281,31 +282,34 @@ class __TwigTemplate_ddbbe92b248a7dfec47203c565c5fb78ce2f30d1df3ec2b7e61cd6e182e
 
     <!-- jQuery -->
     <script src=\"";
-        // line 232
+        // line 233
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/lcbvitrine/js/jquery.js"), "html", null, true);
         echo "\"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src=\"";
-        // line 235
+        // line 236
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/lcbvitrine/js/bootstrap.min.js"), "html", null, true);
         echo "\"></script>
 
     <!-- Special Scripts for this page -->
-    <!--<script src=\"";
-        // line 238
-        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/lcbvitrine/js/accueil.js"), "html", null, true);
-        echo "\"></script>-->
     <script src=\"";
         // line 239
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/lcbvitrine/js/accueil.js"), "html", null, true);
+        echo "\"></script>
+    <script src=\"";
+        // line 240
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/lcbvitrine/js/jquery.parallax-1.1.3.js"), "html", null, true);
         echo "\"></script>
+    <script type=\"text/javascript\" src=\"";
+        // line 241
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/lcbvitrine/js/jquery.localscroll-1.2.7-min.js"), "html", null, true);
+        echo "\"></script>
+    <script type=\"text/javascript\" src=\"";
+        // line 242
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/lcbvitrine/js/jquery.scrollTo-1.4.2-min.js"), "html", null, true);
+        echo "\"></script>
 
-    <script type = \"text/javascript\">
-        \$(document).ready(function(){
-            \$('.secondPart').parallax(\"50%\", 0.4);
-        })
-    </script>
 
 </body>
 
@@ -325,6 +329,6 @@ class __TwigTemplate_ddbbe92b248a7dfec47203c565c5fb78ce2f30d1df3ec2b7e61cd6e182e
 
     public function getDebugInfo()
     {
-        return array (  301 => 239,  297 => 238,  291 => 235,  285 => 232,  213 => 163,  188 => 141,  164 => 120,  105 => 64,  99 => 61,  93 => 58,  87 => 55,  81 => 52,  47 => 21,  41 => 18,  35 => 15,  19 => 1,);
+        return array (  310 => 242,  306 => 241,  302 => 240,  298 => 239,  292 => 236,  286 => 233,  214 => 164,  189 => 142,  165 => 121,  106 => 65,  100 => 62,  94 => 59,  88 => 56,  82 => 53,  47 => 21,  41 => 18,  35 => 15,  19 => 1,);
     }
 }
