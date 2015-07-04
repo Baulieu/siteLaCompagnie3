@@ -168,3 +168,19 @@ footer {
 p.copyright {
     margin: 15px 0 0;
 }
+
+/**
+* partie rajoutée par Boulbi
+**/
+
+#secondPart {
+    background: url(../img/firstBG.jpg) 50% 0 no-repeat fixed;
+    background-size: cover;
+}
+
+.textes {
+    padding: 30px;
+    background-color: rgba(245, 245, 245, 0.9);
+    border-radius: 7px;
+    opacity: 80;
+}
