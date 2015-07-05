@@ -115,7 +115,6 @@ class __TwigTemplate_ddbbe92b248a7dfec47203c565c5fb78ce2f30d1df3ec2b7e61cd6e182e
 
 
     <!-- Header -->
-    <a name=\"about\"></a>
     <div class=\"intro-header\">
         <div class=\"container\">
 
@@ -146,24 +145,25 @@ class __TwigTemplate_ddbbe92b248a7dfec47203c565c5fb78ce2f30d1df3ec2b7e61cd6e182e
     </div>
     <!-- /.intro-header -->
 
+    <div class=\"space\"></div>
+
     <!-- Page Content -->
 
-\t<a  name=\"services\"></a>
-    <div class=\"content-section-a\">
+    <div class=\"content-section-a parallax\" id=\"news\">
 
         <div class=\"container\">
             <div class=\"row\">
-                <div class=\"col-lg-5 col-sm-6\">
+                <div class=\"col-lg-5 col-sm-6 textes\">
                     <hr class=\"section-heading-spacer\">
                     <div class=\"clearfix\"></div>
-                    <h2 class=\"section-heading\">Death to the Stock Photo:<br>Special Thanks</h2>
+                    <h2 class=\"section-heading\">Les News</h2>
                     <p class=\"lead\">A special thanks to <a target=\"_blank\" href=\"http://join.deathtothestockphoto.com/\">Death to the Stock Photo</a> for providing the photographs that you see in this template. Visit their website to become a member.</p>
                 </div>
                 <div class=\"col-lg-5 col-lg-offset-2 col-sm-6\">
-                    <img class=\"img-responsive\" src=\"";
+                    <!--<img class=\"img-responsive\" src=\"";
         // line 121
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/lcbvitrine/img/ipad.png"), "html", null, true);
-        echo "\" alt=\"\">
+        echo "\" alt=\"\">-->
                 </div>
             </div>
 
@@ -172,7 +172,10 @@ class __TwigTemplate_ddbbe92b248a7dfec47203c565c5fb78ce2f30d1df3ec2b7e61cd6e182e
 
     </div>
     <!-- /.content-section-a -->
-    <div class=\"content-section-b\" id=\"secondPart\">
+
+    <div class=\"space\"></div>
+
+    <div class=\"content-section-b parallax\" id=\"projet\">
 
         <div class=\"container\">
 
@@ -180,12 +183,12 @@ class __TwigTemplate_ddbbe92b248a7dfec47203c565c5fb78ce2f30d1df3ec2b7e61cd6e182e
                 <div class=\"col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6 textes\">
                     <hr class=\"section-heading-spacer\">
                     <div class=\"clearfix\"></div>
-                    <h2 class=\"section-heading\">3D Device Mockups<br>by PSDCovers</h2>
+                    <h2 class=\"section-heading\">Le Drakkar</h2>
                     <p class=\"lead\">Turn your 2D designs into high quality, 3D product shots in seconds using free Photoshop actions by <a target=\"_blank\" href=\"http://www.psdcovers.com/\">PSDCovers</a>! Visit their website to download some of their awesome, free photoshop actions!</p>
                 </div>
                 <div class=\"col-lg-5 col-sm-pull-6  col-sm-6\">
                     <!--<img class=\"img-responsive\" src=\"";
-        // line 142
+        // line 145
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/lcbvitrine/img/dog.png"), "html", null, true);
         echo "\" alt=\"\">-->
                 </div>
@@ -197,22 +200,23 @@ class __TwigTemplate_ddbbe92b248a7dfec47203c565c5fb78ce2f30d1df3ec2b7e61cd6e182e
     </div>
     <!-- /.content-section-b -->
 
-    <div class=\"content-section-a\">
+    <div class=\"space\"></div>
+
+    <div class=\"content-section-a parallax\" id=\"boutique\">
 
         <div class=\"container\">
-
             <div class=\"row\">
-                <div class=\"col-lg-5 col-sm-6\">
+                <div class=\"col-lg-5 col-sm-6 textes\">
                     <hr class=\"section-heading-spacer\">
                     <div class=\"clearfix\"></div>
-                    <h2 class=\"section-heading\">Google Web Fonts and<br>Font Awesome Icons</h2>
-                    <p class=\"lead\">This template features the 'Lato' font, part of the <a target=\"_blank\" href=\"http://www.google.com/fonts\">Google Web Font library</a>, as well as <a target=\"_blank\" href=\"http://fontawesome.io\">icons from Font Awesome</a>.</p>
+                    <h2 class=\"section-heading\">La Boutique</h2>
+                    <p class=\"lead\">A special thanks to <a target=\"_blank\" href=\"http://join.deathtothestockphoto.com/\">Death to the Stock Photo</a> for providing the photographs that you see in this template. Visit their website to become a member.</p>
                 </div>
                 <div class=\"col-lg-5 col-lg-offset-2 col-sm-6\">
-                    <img class=\"img-responsive\" src=\"";
-        // line 164
-        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/lcbvitrine/img/phones.png"), "html", null, true);
-        echo "\" alt=\"\">
+                    <!--<img class=\"img-responsive\" src=\"";
+        // line 168
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/lcbvitrine/img/ipad.png"), "html", null, true);
+        echo "\" alt=\"\">-->
                 </div>
             </div>
 
@@ -221,6 +225,62 @@ class __TwigTemplate_ddbbe92b248a7dfec47203c565c5fb78ce2f30d1df3ec2b7e61cd6e182e
 
     </div>
     <!-- /.content-section-a -->
+
+    <div class=\"space\"></div>
+
+    <div class=\"content-section-b parallax\" id=\"batar\">
+
+        <div class=\"container\">
+
+            <div class=\"row\">
+                <div class=\"col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6 textes\">
+                    <hr class=\"section-heading-spacer\">
+                    <div class=\"clearfix\"></div>
+                    <h2 class=\"section-heading\">Les Batars</h2>
+                    <p class=\"lead\">Turn your 2D designs into high quality, 3D product shots in seconds using free Photoshop actions by <a target=\"_blank\" href=\"http://www.psdcovers.com/\">PSDCovers</a>! Visit their website to download some of their awesome, free photoshop actions!</p>
+                </div>
+                <div class=\"col-lg-5 col-sm-pull-6  col-sm-6\">
+                    <!--<img class=\"img-responsive\" src=\"";
+        // line 192
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/lcbvitrine/img/dog.png"), "html", null, true);
+        echo "\" alt=\"\">-->
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-b -->
+
+    <div class=\"space\"></div>
+
+    <div class=\"content-section-a parallax\" id=\"soute\">
+
+        <div class=\"container\">
+
+            <div class=\"row\">
+                <div class=\"col-lg-5 col-sm-6 textes\">
+                    <hr class=\"section-heading-spacer\">
+                    <div class=\"clearfix\"></div>
+                    <h2 class=\"section-heading\">La Soute</h2>
+                    <p class=\"lead\">This template features the 'Lato' font, part of the <a target=\"_blank\" href=\"http://www.google.com/fonts\">Google Web Font library</a>, as well as <a target=\"_blank\" href=\"http://fontawesome.io\">icons from Font Awesome</a>.</p>
+                </div>
+                <div class=\"col-lg-5 col-lg-offset-2 col-sm-6\">
+                    <!--<img class=\"img-responsive\" src=\"";
+        // line 216
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/lcbvitrine/img/phones.png"), "html", null, true);
+        echo "\" alt=\"\">-->
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-a -->
+
+    <div class=\"space\"></div>
 
 \t<a  name=\"contact\"></a>
     <div class=\"banner\">
@@ -282,32 +342,24 @@ class __TwigTemplate_ddbbe92b248a7dfec47203c565c5fb78ce2f30d1df3ec2b7e61cd6e182e
 
     <!-- jQuery -->
     <script src=\"";
-        // line 233
+        // line 287
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/lcbvitrine/js/jquery.js"), "html", null, true);
         echo "\"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src=\"";
-        // line 236
+        // line 290
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/lcbvitrine/js/bootstrap.min.js"), "html", null, true);
         echo "\"></script>
 
     <!-- Special Scripts for this page -->
     <script src=\"";
-        // line 239
+        // line 293
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/lcbvitrine/js/accueil.js"), "html", null, true);
         echo "\"></script>
     <script src=\"";
-        // line 240
+        // line 294
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/lcbvitrine/js/jquery.parallax-1.1.3.js"), "html", null, true);
-        echo "\"></script>
-    <script type=\"text/javascript\" src=\"";
-        // line 241
-        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/lcbvitrine/js/jquery.localscroll-1.2.7-min.js"), "html", null, true);
-        echo "\"></script>
-    <script type=\"text/javascript\" src=\"";
-        // line 242
-        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/lcbvitrine/js/jquery.scrollTo-1.4.2-min.js"), "html", null, true);
         echo "\"></script>
 
 
@@ -329,6 +381,6 @@ class __TwigTemplate_ddbbe92b248a7dfec47203c565c5fb78ce2f30d1df3ec2b7e61cd6e182e
 
     public function getDebugInfo()
     {
-        return array (  310 => 242,  306 => 241,  302 => 240,  298 => 239,  292 => 236,  286 => 233,  214 => 164,  189 => 142,  165 => 121,  106 => 65,  100 => 62,  94 => 59,  88 => 56,  82 => 53,  47 => 21,  41 => 18,  35 => 15,  19 => 1,);
+        return array (  362 => 294,  358 => 293,  352 => 290,  346 => 287,  272 => 216,  245 => 192,  218 => 168,  192 => 145,  165 => 121,  106 => 65,  100 => 62,  94 => 59,  88 => 56,  82 => 53,  47 => 21,  41 => 18,  35 => 15,  19 => 1,);
     }
 }

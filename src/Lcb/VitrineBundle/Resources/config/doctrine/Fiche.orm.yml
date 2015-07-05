@@ -1,0 +1,31 @@
+Lcb\VitrineBundle\Entity\Fiche:
+    type: entity
+    table: null
+    repositoryClass: Lcb\VitrineBundle\Entity\FicheRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        nom:
+            type: string
+            length: 255
+        prenom:
+            type: string
+            length: 255
+        ajout:
+            type: datetime
+        numéro:
+            type: string
+            length: 255
+        mail:
+            type: string
+            length: 255
+        entreprise:
+            type: string
+            length: 255
+        annotations:
+            type: text
+    lifecycleCallbacks: {  }

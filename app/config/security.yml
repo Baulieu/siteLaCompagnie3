@@ -15,8 +15,13 @@ security:
         in_memory:
             memory:
                 users:
-                    user:  { password: userpass, roles: [ 'ROLE_USER' ] }
-                    admin: { password: adminpass, roles: [ 'ROLE_ADMIN' ] }
+                    Thorstein: { password: biff, roles: [ 'ROLE_ADMIN' ] }
+                    Olaf: { password: oseille, roles: [ 'ROLE_ADMIN' ] }
+                    Rollo: { password: cash, roles: [ 'ROLE_ADMIN' ] }
+                    Ragnar: { password: thune, roles: [ 'ROLE_ADMIN' ] }
+                    Baif: { password: fric, roles: [ 'ROLE_ADMIN' ] }
+                    # user:  { password: userpass, roles: [ 'ROLE_USER' ] }
+                    # admin: { password: adminpass, roles: [ 'ROLE_ADMIN' ] }
 
     # the main part of the security, where you can set up firewalls
     # for specific sections of your app
@@ -44,6 +49,17 @@ security:
             #anonymous: ~
             #http_basic:
             #    realm: "Secured Demo Area"
+
+        main:
+            pattern:   ^/
+            anonymous: true
+            provider:  in_memory
+            form_login:
+                login_path: login
+                check_path: login_check
+            logout:
+                path:   logout
+                target: /
 
     # with these settings you can restrict or allow access for different parts
     # of your application based on roles, ip, host or methods

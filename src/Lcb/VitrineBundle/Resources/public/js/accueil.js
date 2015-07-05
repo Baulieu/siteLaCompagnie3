@@ -6,5 +6,5 @@
 * */
 
 $(document).ready(function(){
-    $('#secondPart').parallax("50%", 0.7);
+    $('.parallax').parallax("50%", 0.7);
 })
