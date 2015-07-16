@@ -179,6 +179,11 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
             return array (  '_controller' => 'Lcb\\VitrineBundle\\Controller\\DefaultController::contactAction',  '_route' => 'lcb_contact',);
         }
 
+        // lcb_messages
+        if ($pathinfo === '/messages') {
+            return array (  '_controller' => 'Lcb\\VitrineBundle\\Controller\\DefaultController::messagesAction',  '_route' => 'lcb_messages',);
+        }
+
         // homepage
         if ($pathinfo === '/app/example') {
             return array (  '_controller' => 'AppBundle\\Controller\\DefaultController::indexAction',  '_route' => 'homepage',);

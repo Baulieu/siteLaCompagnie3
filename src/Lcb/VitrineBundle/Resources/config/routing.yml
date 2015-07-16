@@ -33,3 +33,7 @@ lcb_article:
 lcb_contact:
     path:     /contact
     defaults: { _controller:LcbVitrineBundle:Default:contact }
+
+lcb_messages:
+    path:     /messages
+    defaults: { _controller:LcbVitrineBundle:Default:messages }

@@ -1,0 +1,9 @@
+{% extends "LcbVitrineBundle::layout.html.twig" %}
+
+{% block body %}
+<ul>
+    {% for message in messages %}
+        <li>{{ message.prenom }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}

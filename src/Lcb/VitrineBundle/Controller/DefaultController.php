@@ -3,6 +3,7 @@
 namespace Lcb\VitrineBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Lcb\VitrineBundle\Entity\Message;
 
 class DefaultController extends Controller
 {
@@ -66,7 +67,7 @@ class DefaultController extends Controller
 		return $this->render('LcbVitrineBundle:Default:index.html.twig', array('name' => "batars"));
 	}
 
-	public function souteAction()
+	public function souteAction() // TODO fill soute
 	{
 		/**
 		* même principe que pour le projet:
@@ -76,7 +77,7 @@ class DefaultController extends Controller
 		return $this->render('LcbVitrineBundle:Default:index.html.twig', array('name' => "soute"));
 	}
 
-	public function photosAction()
+	public function photosAction() // TODO fill photos
 	{
 		/**
 		* tu veux que je te fasse un dessin? -> gallerie bootstrap? Ou trouver un truc moins connu..
@@ -84,12 +85,33 @@ class DefaultController extends Controller
 		return $this->render('LcbVitrineBundle:Default:index.html.twig', array('name' => "photos"));
 	}
 
-	public function contactAction()
+	public function contactAction()  // TODO fill contact
 	{
 		/**
 		* reprendre le même principe que pour la version 2.0
 		* ATTENTION dans le message envoyés ensuite à la compagnie, bien marquer le nom, le message et l'adresse!!
 		**/
+        $message = new Message();
+
+        $formbuilder = $this->createFormBuilder($message);
+        $formbuilder
+            ->add('prenom',     'text')
+            ->add('nom',        'text')
+            ->add('date',       'date')
+            ->add('mail',       'text')
+            ->add('text',    'textarea');
+
+
 		return $this->render('LcbVitrineBundle:Default:index.html.twig', array('name' => "contact"));
 	}
+
+    public function messagesAction() // RAS
+    {
+        if (!$this->get('security.context')->isGranted('ROLE_ADMIN'))
+            return $this->redirect($this->generateUrl('lcb_accueil'));
+
+        $repository = $this->getDoctrine()->getManager()->getRepository('LcbVitrineBundle:message');
+        $messages = $repository->findAll();
+        return $this->render('LcbVitrineBundle:Default:messages.html.twig', array('messages' => $messages));
+    }
 }
