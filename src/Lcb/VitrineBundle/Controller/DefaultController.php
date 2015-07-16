@@ -74,7 +74,7 @@ class DefaultController extends Controller
 		*    premier paragraphe introductif sur une photo large de la soute actuelle
 		*    enchaînement de bandeaux retraçant l'histoire de la tessou
 		**/
-		return $this->render('LcbVitrineBundle:Default:index.html.twig', array('name' => "soute"));
+		return $this->render('LcbVitrineBundle:Default:soute.html.twig');
 	}
 
 	public function photosAction() // TODO fill photos
@@ -85,7 +85,7 @@ class DefaultController extends Controller
 		return $this->render('LcbVitrineBundle:Default:index.html.twig', array('name' => "photos"));
 	}
 
-	public function contactAction()  // TODO fill contact
+	public function contactAction()  // TODO ajouter envoi de mail à l'adresse de la compagnie
 	{
 		/**
 		* reprendre le même principe que pour la version 2.0
