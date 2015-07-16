@@ -3,7 +3,7 @@
 namespace Lcb\VitrineBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use Lcb\VitrineBundle\Entity\Message;
+use Lcb\VitrineBundle\Entity\message;
 
 class DefaultController extends Controller
 {
@@ -91,7 +91,7 @@ class DefaultController extends Controller
 		* reprendre le même principe que pour la version 2.0
 		* ATTENTION dans le message envoyés ensuite à la compagnie, bien marquer le nom, le message et l'adresse!!
 		**/
-        $message = new Message();
+        $message = new message();
 
         $formbuilder = $this->createFormBuilder($message);
         $formbuilder
@@ -100,9 +100,21 @@ class DefaultController extends Controller
             ->add('date',       'date')
             ->add('mail',       'text')
             ->add('text',    'textarea');
+        $form = $formbuilder->getForm();
 
+        $request = $this->get('request');
 
-		return $this->render('LcbVitrineBundle:Default:index.html.twig', array('name' => "contact"));
+        if ($request->getMethod() == 'POST') {
+            $form->bind($request);
+            if ($form->isValid()) {
+                $em = $this->getDoctrine()->getEntityManager();
+                $em->persist($message);
+                $em->flush();
+                return $this->redirect($this->generateUrl('lcb_acceuil'));
+            }
+        }
+
+        return $this->render('LcbVitrineBundle:Default:contact.html.twig', array('form' => $form->createView()));
 	}
 
     public function messagesAction() // RAS
