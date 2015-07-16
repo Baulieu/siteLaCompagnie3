@@ -36,6 +36,16 @@ class DefaultController extends Controller
 		* articles suivants en un peu plus petit, avec l'image associée qui change de côté à chaque fois.
 		* à peu près semblable à la version 2.0
 		**/
+
+        /**
+        * stratégie de construction de l'entité Article:
+        * on ne peut avoir que cinq paragraphes + photos. Au max.
+        * on a deux tableaux: un de cinq paragraphes, un de six strings.
+        * le mec a le choix. Soit il uploade une photo, soit il met un lien.
+        * dans tous les cas, le controller importe l'image en enregistre un string qui contient la balise img complète ou l'iframe.
+        * au moment de faire le render, le twig se contente d'enchainer les trucs, en mettant les vidéos et les photos dans un bon format. #css
+        **/
+
 		return $this->render('LcbVitrineBundle:Default:index.html.twig', array('name' => "news"));
 	}
 

@@ -145,7 +145,7 @@ class __TwigTemplate_d914a33f066d0f8eecb4980e6d099612e19c350388ddab7d0c53881925e
     </div>
     <!-- /.intro-header -->
 
-    <div class=\"space\"></div>
+    <!--<div class=\"space\"></div>-->
 
     <!-- Page Content -->
 
@@ -173,7 +173,7 @@ class __TwigTemplate_d914a33f066d0f8eecb4980e6d099612e19c350388ddab7d0c53881925e
     </div>
     <!-- /.content-section-a -->
 
-    <div class=\"space\"></div>
+    <!--<div class=\"space\"></div>-->
 
     <div class=\"content-section-b parallax\" id=\"projet\">
 
@@ -200,7 +200,7 @@ class __TwigTemplate_d914a33f066d0f8eecb4980e6d099612e19c350388ddab7d0c53881925e
     </div>
     <!-- /.content-section-b -->
 
-    <div class=\"space\"></div>
+    <!--<div class=\"space\"></div>-->
 
     <div class=\"content-section-a parallax\" id=\"boutique\">
 
@@ -226,7 +226,7 @@ class __TwigTemplate_d914a33f066d0f8eecb4980e6d099612e19c350388ddab7d0c53881925e
     </div>
     <!-- /.content-section-a -->
 
-    <div class=\"space\"></div>
+    <!--<div class=\"space\"></div>-->
 
     <div class=\"content-section-b parallax\" id=\"batar\">
 
@@ -253,7 +253,7 @@ class __TwigTemplate_d914a33f066d0f8eecb4980e6d099612e19c350388ddab7d0c53881925e
     </div>
     <!-- /.content-section-b -->
 
-    <div class=\"space\"></div>
+    <!--<div class=\"space\"></div>-->
 
     <div class=\"content-section-a parallax\" id=\"soute\">
 
@@ -280,7 +280,7 @@ class __TwigTemplate_d914a33f066d0f8eecb4980e6d099612e19c350388ddab7d0c53881925e
     </div>
     <!-- /.content-section-a -->
 
-    <div class=\"space\"></div>
+    <!--<div class=\"space\"></div>-->
 
 \t<a  name=\"contact\"></a>
     <div class=\"banner\">
