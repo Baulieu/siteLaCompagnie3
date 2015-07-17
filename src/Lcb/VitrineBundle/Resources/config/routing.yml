@@ -6,6 +6,10 @@ lcb_news:
     path:     /news
     defaults: { _controller: LcbVitrineBundle:Default:news }
 
+lcb_new:
+    path:     /new/{id}
+    defaults: { _controller: LcbVitrineBundle:Default:new }
+
 lcb_projet:
     path:     /projet
     defaults: { _controller: LcbVitrineBundle:Default:projet }
@@ -24,16 +28,20 @@ lcb_soute:
 
 lcb_photos:
     path:     /photos
-    defaults: { _controller:LcbVitrineBundle:Default:photos }
+    defaults: { _controller: LcbVitrineBundle:Default:photos }
 
 lcb_article:
     path:     /article/{id}
-    defaults: { _controller:LcbVitrineBundle:Default:photos }
+    defaults: { _controller: LcbVitrineBundle:Default:photos }
 
 lcb_contact:
     path:     /contact
-    defaults: { _controller:LcbVitrineBundle:Default:contact }
+    defaults: { _controller: LcbVitrineBundle:Default:contact }
 
 lcb_messages:
     path:     /messages
-    defaults: { _controller:LcbVitrineBundle:Default:messages }
+    defaults: { _controller: LcbVitrineBundle:Default:messages }
+
+lcb_ajoutArticle:
+    path:     /ajout
+    defaults: { _controller: LcbVitrineBundle:Default:ajoutArticle }

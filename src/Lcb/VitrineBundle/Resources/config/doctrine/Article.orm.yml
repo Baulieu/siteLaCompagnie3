@@ -1,0 +1,24 @@
+Lcb\VitrineBundle\Entity\Article:
+    type: entity
+    table: null
+    repositoryClass: Lcb\VitrineBundle\Entity\ArticleRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        titre:
+            type: string
+            length: 255
+        author:
+            type: string
+            length: 255
+        date:
+            type: datetime
+        parties:
+            type: array
+        images:
+            type: array
+    lifecycleCallbacks: {  }

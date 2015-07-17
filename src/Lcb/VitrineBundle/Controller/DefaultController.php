@@ -4,6 +4,7 @@ namespace Lcb\VitrineBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Lcb\VitrineBundle\Entity\message;
+use Lcb\VitrineBundle\Entity\Article;
 
 class DefaultController extends Controller
 {
@@ -48,6 +49,11 @@ class DefaultController extends Controller
 
 		return $this->render('LcbVitrineBundle:Default:index.html.twig', array('name' => "news"));
 	}
+
+    public function newAction()
+    {
+        return $this->render('LcbVitrineBundle:Default:index.html.twig', array('name' => "new"));
+    }
 
 	public function projetAction()
 	{
@@ -103,14 +109,14 @@ class DefaultController extends Controller
 		**/
         $message = new message();
 
-        $formbuilder = $this->createFormBuilder($message);
-        $formbuilder
+        $formBuilder = $this->createFormBuilder($message);
+        $formBuilder
             ->add('prenom',     'text')
             ->add('nom',        'text')
             ->add('date',       'date')
             ->add('mail',       'text')
             ->add('text',    'textarea');
-        $form = $formbuilder->getForm();
+        $form = $formBuilder->getForm();
 
         $request = $this->get('request');
 
@@ -135,5 +141,32 @@ class DefaultController extends Controller
         $repository = $this->getDoctrine()->getManager()->getRepository('LcbVitrineBundle:message');
         $messages = $repository->findAll();
         return $this->render('LcbVitrineBundle:Default:messages.html.twig', array('messages' => $messages));
+    }
+
+    public function ajoutArticleAction()
+    {
+        $article = new Article();
+
+        $formBuilder = $this->createFormBuilder($article);
+        $formBuilder
+            ->add('titre',     'text')
+            ->add('author',    'text')
+            ->add('date',      'date')
+            ->add('parties',   'collection', array('type' => 'text'))
+            ->add('images',    'collection', array('type' => 'text'));
+        $form = $formBuilder->getForm();
+
+        $request = $this->get('request');
+
+        if ($request->getMethod() == 'POST') {
+            $form->bind($request);
+            if ($form->isValid()) {
+                $em = $this->getDoctrine()->getEntityManager();
+                $em->persist($article);
+                $em->flush();
+                return $this->redirect($this->generateUrl('lcb_news'));
+            }
+        }
+        return $this->render('LcbVitrineBundle:Default:ajout.html.twig', array('form' => $form->createView()));
     }
 }

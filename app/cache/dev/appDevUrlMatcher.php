@@ -136,9 +136,17 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
             return array (  '_controller' => 'Lcb\\VitrineBundle\\Controller\\DefaultController::accueilAction',  '_route' => 'lcb_accueil',);
         }
 
-        // lcb_news
-        if ($pathinfo === '/news') {
-            return array (  '_controller' => 'Lcb\\VitrineBundle\\Controller\\DefaultController::newsAction',  '_route' => 'lcb_news',);
+        if (0 === strpos($pathinfo, '/new')) {
+            // lcb_news
+            if ($pathinfo === '/news') {
+                return array (  '_controller' => 'Lcb\\VitrineBundle\\Controller\\DefaultController::newsAction',  '_route' => 'lcb_news',);
+            }
+
+            // lcb_new
+            if (preg_match('#^/new/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'lcb_new')), array (  '_controller' => 'Lcb\\VitrineBundle\\Controller\\DefaultController::newAction',));
+            }
+
         }
 
         // lcb_projet
@@ -184,9 +192,17 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
             return array (  '_controller' => 'Lcb\\VitrineBundle\\Controller\\DefaultController::messagesAction',  '_route' => 'lcb_messages',);
         }
 
-        // homepage
-        if ($pathinfo === '/app/example') {
-            return array (  '_controller' => 'AppBundle\\Controller\\DefaultController::indexAction',  '_route' => 'homepage',);
+        if (0 === strpos($pathinfo, '/a')) {
+            // lcb_ajoutArticle
+            if ($pathinfo === '/ajout') {
+                return array (  '_controller' => 'Lcb\\VitrineBundle\\Controller\\DefaultController::ajoutArticleAction',  '_route' => 'lcb_ajoutArticle',);
+            }
+
+            // homepage
+            if ($pathinfo === '/app/example') {
+                return array (  '_controller' => 'AppBundle\\Controller\\DefaultController::indexAction',  '_route' => 'homepage',);
+            }
+
         }
 
         if (0 === strpos($pathinfo, '/log')) {

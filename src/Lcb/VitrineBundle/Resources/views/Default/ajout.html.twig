@@ -1,0 +1,57 @@
+{% extends 'LcbVitrineBundle::layout.html.twig' %}
+
+{% block body %}
+    <div class="well">
+        <form action="{{ path('lcb_ajoutArticle') }}" method="post" {{ form_enctype(form) }}>
+            {{ form_errors(form) }}
+            {{ form_row(form._token) }}
+
+            <div>
+                {{ form_label(form.titre, "Titre de l'article") }}
+                {{ form_errors(form.titre) }}
+                {{ form_widget(form.titre) }}
+            </div>
+
+            <div>
+                {{ form_label(form.author, "auteur de l'article") }}
+                {{ form_errors(form.author) }}
+                {{ form_widget(form.author) }}
+            </div>
+
+            <div>
+                {{ form_label(form.date, "date de publication de l'article") }}
+                {{ form_errors(form.date) }}
+                {{ form_widget(form.date) }}
+            </div>
+
+            <div>
+                {{ form_label(form.parties, "paragraphes de l'article") }}
+                {{ form_errors(form.parties) }}
+                <ul>
+                    {% for paragraphe in form.parties %}
+                        <li>
+                            {{ form_errors(paragraphe) }}
+                            {{ form_widget(paragraphe) }}
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+
+            <div>
+                {{  form_label(form.titre, "Titre de l'article") }}
+                {{ form_errors(form.titre) }}
+               <ul>
+                   {% for image in form.images %}
+                       <li>
+                           {{ form_errors(image) }}
+                           {{ form_widget(image) }}
+                       </li>
+                   {% endfor %}
+               </ul>
+            </div>
+
+
+            <input type="submit" class="btn btn-primary">
+        </form>
+    </div>
+{% endblock %}

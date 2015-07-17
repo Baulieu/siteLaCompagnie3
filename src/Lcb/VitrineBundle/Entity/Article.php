@@ -6,53 +6,43 @@ use Doctrine\ORM\Mapping as ORM;
 
 /**
  * Article
- *
- * @ORM\Table()
- * @ORM\Entity(repositoryClass="Lcb\VitrineBundle\Entity\ArticleRepository")
  */
 class Article
 {
+
+    public function __construct()
+    {
+        $this->parties = ["", "", "", "", ""];
+        $this->images = ["", "", "", "", "", ""];
+    }
+
     /**
      * @var integer
-     *
-     * @ORM\Column(name="id", type="integer")
-     * @ORM\Id
-     * @ORM\GeneratedValue(strategy="AUTO")
      */
     private $id;
 
     /**
      * @var string
-     *
-     * @ORM\Column(name="titre", type="string", length=255)
      */
     private $titre;
 
     /**
      * @var string
-     *
-     * @ORM\Column(name="author", type="string", length=255)
      */
     private $author;
 
     /**
      * @var \DateTime
-     *
-     * @ORM\Column(name="date", type="datetime")
      */
     private $date;
 
     /**
      * @var array
-     *
-     * @ORM\Column(name="parties", type="array")
      */
     private $parties;
 
     /**
      * @var array
-     *
-     * @ORM\Column(name="images", type="array")
      */
     private $images;
 
