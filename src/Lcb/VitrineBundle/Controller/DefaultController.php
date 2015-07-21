@@ -71,9 +71,9 @@ class DefaultController extends Controller
 	{
 		/**
          * en principe: faire une redirection simple vers "boutique.lacompagniedubatar.fr" -> ce sera le cas dans le futur
-         * pourn l'instant on garde tout normal pour simplifier le développement.
+         * pour l'instant on garde tout dans le même projet pour simplifier le développement.
 		*/
-		return $this->render('LcbVitrineBundle:Default:index.html.twig', array('name' => "boutique"));
+		return $this->render('LcbVitrineBundle:Default:boutique.html.twig');
 	}
 
 	public function batarsAction()

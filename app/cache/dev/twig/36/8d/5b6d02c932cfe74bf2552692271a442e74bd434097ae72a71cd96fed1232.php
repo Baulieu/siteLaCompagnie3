@@ -11,6 +11,7 @@ class __TwigTemplate_368d5b6d02c932cfe74bf2552692271a442e74bd434097ae72a71cd96fe
 
         $this->blocks = array(
             'body' => array($this, 'block_body'),
+            'end_block' => array($this, 'block_end_block'),
         );
     }
 
@@ -28,20 +29,22 @@ class __TwigTemplate_368d5b6d02c932cfe74bf2552692271a442e74bd434097ae72a71cd96fe
         <meta name=\"description\" content=\"\">
         <meta name=\"author\" content=\"\">
 
+
+
         <link href=\"";
-        // line 12
+        // line 14
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/lcbvitrine/css/bootstrap.min.css"), "html", null, true);
         echo "\" rel=\"stylesheet\">
 
         <!-- Custom CSS -->
         <link href=\" ";
-        // line 15
+        // line 17
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/lcbvitrine/css/landing-page.css"), "html", null, true);
         echo "\" rel=\"stylesheet\">
 
         <!-- Custom Fonts -->
         <link href=\"";
-        // line 18
+        // line 20
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/lcbvitrine/font-awesome/css/font-awesome.min.css"), "html", null, true);
         echo "\" rel=\"stylesheet\" type=\"text/css\">
         <link href=\"http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic\" rel=\"stylesheet\" type=\"text/css\">
@@ -56,38 +59,52 @@ class __TwigTemplate_368d5b6d02c932cfe74bf2552692271a442e74bd434097ae72a71cd96fe
 
     <body>
         ";
-        // line 30
-        $this->displayBlock('body', $context, $blocks);
         // line 32
-        echo "        <!-- jQuery -->
-        <script src=\"";
-        // line 33
+        $this->displayBlock('body', $context, $blocks);
+        // line 34
+        echo "
+        <!-- jQuery -->
+        <script src=\"//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js\"></script>
+        <!--<script src=\"";
+        // line 37
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/lcbvitrine/js/jquery.js"), "html", null, true);
-        echo "\"></script>
+        echo "\"></script>-->
 
         <!-- Bootstrap Core JavaScript -->
-        <script src=\"";
-        // line 36
+        <script src=\"//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js\"></script>
+        <!--<script src=\"";
+        // line 41
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/lcbvitrine/js/bootstrap.min.js"), "html", null, true);
-        echo "\"></script>
+        echo "\"></script>-->
 
         <!-- Special Scripts for this page -->
         <script src=\"";
-        // line 39
+        // line 44
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/lcbvitrine/js/accueil.js"), "html", null, true);
         echo "\"></script>
         <script src=\"";
-        // line 40
+        // line 45
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/lcbvitrine/js/jquery.parallax-1.1.3.js"), "html", null, true);
         echo "\"></script>
-    </body>
+        ";
+        // line 46
+        $this->displayBlock('end_block', $context, $blocks);
+        // line 48
+        echo "    </body>
 </html>";
     }
 
-    // line 30
+    // line 32
     public function block_body($context, array $blocks = array())
     {
-        // line 31
+        // line 33
+        echo "        ";
+    }
+
+    // line 46
+    public function block_end_block($context, array $blocks = array())
+    {
+        // line 47
         echo "        ";
     }
 
@@ -103,6 +120,6 @@ class __TwigTemplate_368d5b6d02c932cfe74bf2552692271a442e74bd434097ae72a71cd96fe
 
     public function getDebugInfo()
     {
-        return array (  91 => 31,  88 => 30,  81 => 40,  77 => 39,  71 => 36,  65 => 33,  62 => 32,  60 => 30,  45 => 18,  39 => 15,  33 => 12,  20 => 1,);
+        return array (  108 => 47,  105 => 46,  101 => 33,  98 => 32,  93 => 48,  91 => 46,  87 => 45,  83 => 44,  77 => 41,  70 => 37,  65 => 34,  63 => 32,  48 => 20,  42 => 17,  36 => 14,  21 => 1,);
     }
 }
