@@ -70,7 +70,8 @@ class DefaultController extends Controller
 	public function boutiqueAction()
 	{
 		/**
-		* en principe: faire une redirection simple vers "boutique.lacompagniedubatar.fr"
+         * en principe: faire une redirection simple vers "boutique.lacompagniedubatar.fr" -> ce sera le cas dans le futur
+         * pourn l'instant on garde tout normal pour simplifier le développement.
 		*/
 		return $this->render('LcbVitrineBundle:Default:index.html.twig', array('name' => "boutique"));
 	}
@@ -168,5 +169,15 @@ class DefaultController extends Controller
             }
         }
         return $this->render('LcbVitrineBundle:Default:ajout.html.twig', array('form' => $form->createView()));
+    }
+
+    public function fichesAction()
+    {
+        return $this->render('LcbVitrineBundle:Default:index.html.twig', array('name' => 'fiches'));
+    }
+
+    public function ajoutFicheAction()
+    {
+        return $this->render('LcbVitrineBundle:Default:index.html.twig', array('name' => 'ajoutFiches'));
     }
 }

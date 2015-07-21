@@ -192,10 +192,20 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
             return array (  '_controller' => 'Lcb\\VitrineBundle\\Controller\\DefaultController::messagesAction',  '_route' => 'lcb_messages',);
         }
 
+        // lcb_ajoutArticle
+        if ($pathinfo === '/ajout') {
+            return array (  '_controller' => 'Lcb\\VitrineBundle\\Controller\\DefaultController::ajoutArticleAction',  '_route' => 'lcb_ajoutArticle',);
+        }
+
+        // lcb_fiches
+        if ($pathinfo === '/fiches') {
+            return array (  '_controller' => 'Lcb\\VitrineBundle\\Controller\\DefaultController::fichesAction',  '_route' => 'lcb_fiches',);
+        }
+
         if (0 === strpos($pathinfo, '/a')) {
-            // lcb_ajoutArticle
-            if ($pathinfo === '/ajout') {
-                return array (  '_controller' => 'Lcb\\VitrineBundle\\Controller\\DefaultController::ajoutArticleAction',  '_route' => 'lcb_ajoutArticle',);
+            // lcb_ajoutFiche
+            if ($pathinfo === '/ajoutFiches') {
+                return array (  '_controller' => 'Lcb\\VitrineBundle\\Controller\\DefaultController::ajoutFichesAction',  '_route' => 'lcb_ajoutFiche',);
             }
 
             // homepage

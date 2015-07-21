@@ -45,3 +45,11 @@ lcb_messages:
 lcb_ajoutArticle:
     path:     /ajout
     defaults: { _controller: LcbVitrineBundle:Default:ajoutArticle }
+
+lcb_fiches:
+    path:     /fiches
+    defaults: { _controller: LcbVitrineBundle:Default:fiches }
+
+lcb_ajoutFiche:
+    path:     /ajoutFiches
+    defaults: { _controller: LcbVitrineBundle:Default:ajoutFiches }
