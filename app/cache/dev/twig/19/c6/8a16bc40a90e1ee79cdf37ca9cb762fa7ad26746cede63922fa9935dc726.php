@@ -20,6 +20,10 @@ class __TwigTemplate_19c68a16bc40a90e1ee79cdf37ca9cb762fa7ad26746cede63922fa9935
 <head>
     <title>page boutique</title>
     <link href=\"//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css\" rel=\"stylesheet\">
+    <link href=\"";
+        // line 5
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/lcbvitrine/css/boutique.css"), "html", null, true);
+        echo "\" rel=\"stylesheet\">
     <style type=\"text/css\">
         .deco-none {
             text-decoration: none !important;
@@ -28,7 +32,8 @@ class __TwigTemplate_19c68a16bc40a90e1ee79cdf37ca9cb762fa7ad26746cede63922fa9935
 </head>
 <body>
 
-<div class=\"container\">
+<div class=\"wrapper\">
+
 
     <ul class=\"nav nav-tabs responsive\" id=\"myTab\">
         <li class=\"test-class active\"><a class=\"deco-none misc-class\" href=\"#openDesk\"><span class=\"glyphicon glyphicon-globe\"></span>  openDesk</a></li>
@@ -61,7 +66,7 @@ class __TwigTemplate_19c68a16bc40a90e1ee79cdf37ca9cb762fa7ad26746cede63922fa9935
 <script src=\"//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js\"></script>
 <script src=\"//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js\"></script>
 <script src=\"";
-        // line 45
+        // line 47
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/lcbvitrine/js/responsive-tabs.js"), "html", null, true);
         echo "\"></script>
 <script type=\"text/javascript\">
@@ -109,6 +114,6 @@ class __TwigTemplate_19c68a16bc40a90e1ee79cdf37ca9cb762fa7ad26746cede63922fa9935
 
     public function getDebugInfo()
     {
-        return array (  65 => 45,  19 => 1,);
+        return array (  70 => 47,  25 => 5,  19 => 1,);
     }
 }
