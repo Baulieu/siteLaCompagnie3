@@ -116,7 +116,7 @@ class DefaultController extends Controller
             ->add('nom',        'text')
             ->add('date',       'date')
             ->add('mail',       'text')
-            ->add('text',    'textarea');
+            ->add('text',   'textarea');
         $form = $formBuilder->getForm();
 
         $request = $this->get('request');
