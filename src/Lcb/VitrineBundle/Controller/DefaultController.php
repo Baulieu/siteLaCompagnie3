@@ -98,18 +98,36 @@ class DefaultController extends Controller
             $em->persist($message);
             $em->flush();
             return $this->redirect($this->generateUrl('lcb_merci'));
-
-            return $this->redirect($this->generateUrl('lcb_merci'));
         }
 
         if (isset($_POST['catalogue']))
         {
-            return $this->redirect($this->generateUrl('lcb_contact'));
+            $message->setMail($_POST['mail']);
+            $message->setNom($_POST['nom']);
+            $message->setPrenom($_POST['prenom']);
+
+            $contenu = "**********  Nouveau message pour une commande pour un meuble sue le catalogue hors OpenDesk!  **********\n\n\n".$_POST['message'];
+            $message->setText($contenu);
+
+            $em = $this->getDoctrine()->getEntityManager();
+            $em->persist($message);
+            $em->flush();
+            return $this->redirect($this->generateUrl('lcb_merci'));
         }
 
         if (isset($_POST['vosIdees']))
         {
-            return $this->redirect($this->generateUrl('lcb_soute'));
+            $message->setMail($_POST['mail']);
+            $message->setNom($_POST['nom']);
+            $message->setPrenom($_POST['prenom']);
+
+            $contenu = "**********  Nouveau message pour un projet particulier!  **********\n\n\n".$_POST['message'];
+            $message->setText($contenu);
+
+            $em = $this->getDoctrine()->getEntityManager();
+            $em->persist($message);
+            $em->flush();
+            return $this->redirect($this->generateUrl('lcb_merci'));
         }
 
 		return $this->render('LcbVitrineBundle:Default:boutique.html.twig');
