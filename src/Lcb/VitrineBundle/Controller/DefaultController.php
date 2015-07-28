@@ -76,7 +76,7 @@ class DefaultController extends Controller
 
         $message = new message();
 
-
+        $message->setDate(date("d-m-Y"));
 
         if (isset($_POST['openDesk']))
         {
@@ -199,5 +199,10 @@ class DefaultController extends Controller
     public function ajoutFicheAction()
     {
         return $this->render('LcbVitrineBundle:Default:index.html.twig', array('name' => 'ajoutFiches'));
+    }
+
+    public function merciAction()
+    {
+        return $this->render('lcbVitrineBundle:Default:merci.html.twig');
     }
 }

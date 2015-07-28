@@ -53,3 +53,7 @@ lcb_fiches:
 lcb_ajoutFiche:
     path:     /ajoutFiches
     defaults: { _controller: LcbVitrineBundle:Default:ajoutFiches }
+
+lcb_merci:
+    path:     /merci
+    defaults: { _controller: LcbVitrineBundle:Default:merci }

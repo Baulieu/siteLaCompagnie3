@@ -202,17 +202,19 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
             return array (  '_controller' => 'Lcb\\VitrineBundle\\Controller\\DefaultController::fichesAction',  '_route' => 'lcb_fiches',);
         }
 
-        if (0 === strpos($pathinfo, '/a')) {
-            // lcb_ajoutFiche
-            if ($pathinfo === '/ajoutFiches') {
-                return array (  '_controller' => 'Lcb\\VitrineBundle\\Controller\\DefaultController::ajoutFichesAction',  '_route' => 'lcb_ajoutFiche',);
-            }
+        // lcb_ajoutFiche
+        if ($pathinfo === '/ajoutFiches') {
+            return array (  '_controller' => 'Lcb\\VitrineBundle\\Controller\\DefaultController::ajoutFichesAction',  '_route' => 'lcb_ajoutFiche',);
+        }
 
-            // homepage
-            if ($pathinfo === '/app/example') {
-                return array (  '_controller' => 'AppBundle\\Controller\\DefaultController::indexAction',  '_route' => 'homepage',);
-            }
+        // lcb_merci
+        if ($pathinfo === '/merci') {
+            return array (  '_controller' => 'Lcb\\VitrineBundle\\Controller\\DefaultController::merciAction',  '_route' => 'lcb_merci',);
+        }
 
+        // homepage
+        if ($pathinfo === '/app/example') {
+            return array (  '_controller' => 'AppBundle\\Controller\\DefaultController::indexAction',  '_route' => 'homepage',);
         }
 
         if (0 === strpos($pathinfo, '/log')) {
