@@ -73,6 +73,26 @@ class DefaultController extends Controller
          * en principe: faire une redirection simple vers "boutique.lacompagniedubatar.fr" -> ce sera le cas dans le futur
          * pour l'instant on garde tout dans le même projet pour simplifier le développement.
 		*/
+
+        $message = new message();
+
+
+
+        if (isset($_POST['openDesk']))
+        {
+            return $this->redirect($this->generateUrl('lcb_accueil'));
+        }
+
+        if (isset($_POST['catalogue']))
+        {
+            return $this->redirect($this->generateUrl('lcb_contact'));
+        }
+
+        if (isset($_POST['vosIdees']))
+        {
+            return $this->redirect($this->generateUrl('lcb_soute'));
+        }
+
 		return $this->render('LcbVitrineBundle:Default:boutique.html.twig');
 	}
 
