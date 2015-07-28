@@ -80,6 +80,36 @@ class __TwigTemplate_19c68a16bc40a90e1ee79cdf37ca9cb762fa7ad26746cede63922fa9935
         <div class=\"tab-pane\" id=\"catalogue\">
             <br>
             <p>La Compagnie est fière de vous présenter ses créations originales, ou issues d'autres réseaux qu'OpenDesk!</p>
+            <div class=\"formulaire\">
+                <form method=\"post\">
+                    <div class=\"form_part\">
+                        <label for=\"prenom\">Prénom :</label>
+                        <input type=\"text\" name=\"prenom\">
+                    </div>
+
+                    <div class=\"form_part\">
+                        <label for=\"nom\">Nom :</label>
+                        <input type=\"text\" name=\"nom\">
+                    </div>
+
+                    <div class=\"form_part\">
+                        <label for=\"mail\">Mail :</label>
+                        <input type=\"email\" name=\"mail\">
+                    </div>
+
+                    <div class=\"form_part\">
+                        <label for=\"phone\">Téléphone (facultatif) :</label>
+                        <input type=\"tel\" name=\"phone\">
+                    </div>
+
+                    <div class=\"form_part\">
+                        <label for=\"message\">votre demande :</label>
+                        <textarea name=\"message\" rows=\"3\" cols=\"45\"></textarea>
+                    </div>
+
+                    <input type=\"submit\" name=\"catalogue\" value=\"Valider\" class=\"btn btn-primary\">
+                </form>
+            </div>
         </div>
         <div class=\"tab-pane\" id=\"vosIdees\">
             <br>
@@ -87,6 +117,36 @@ class __TwigTemplate_19c68a16bc40a90e1ee79cdf37ca9cb762fa7ad26746cede63922fa9935
             <p>Vous avez un projet complet à faire réaliser?</p>
             <p>Vous voulez réaliser un objet qui n'est pas encore dans le catalogue?</p>
             <p>La Compagnie sera heureuse de travailler avec vous à la réalisation de votre projet!<br>Dites-nous ce qui vous ferait plaisir:</p>
+            <div class=\"formulaire\">
+                <form method=\"post\">
+                    <div class=\"form_part\">
+                        <label for=\"prenom\">Prénom :</label>
+                        <input type=\"text\" name=\"prenom\">
+                    </div>
+
+                    <div class=\"form_part\">
+                        <label for=\"nom\">Nom :</label>
+                        <input type=\"text\" name=\"nom\">
+                    </div>
+
+                    <div class=\"form_part\">
+                        <label for=\"mail\">Mail :</label>
+                        <input type=\"email\" name=\"mail\">
+                    </div>
+
+                    <div class=\"form_part\">
+                        <label for=\"phone\">Téléphone (facultatif) :</label>
+                        <input type=\"tel\" name=\"phone\">
+                    </div>
+
+                    <div class=\"form_part\">
+                        <label for=\"message\">votre demande :</label>
+                        <textarea name=\"message\" rows=\"3\" cols=\"45\"></textarea>
+                    </div>
+
+                    <input type=\"submit\" name=\"vosIdees\" value=\"Valider\" class=\"btn btn-primary\">
+                </form>
+            </div>
         </div>
     </div>
 
@@ -97,7 +157,7 @@ class __TwigTemplate_19c68a16bc40a90e1ee79cdf37ca9cb762fa7ad26746cede63922fa9935
 <script src=\"//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js\"></script>
 <script src=\"//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js\"></script>
 <script src=\"";
-        // line 78
+        // line 138
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/lcbvitrine/js/responsive-tabs.js"), "html", null, true);
         echo "\"></script>
 <script type=\"text/javascript\">
@@ -145,6 +205,6 @@ class __TwigTemplate_19c68a16bc40a90e1ee79cdf37ca9cb762fa7ad26746cede63922fa9935
 
     public function getDebugInfo()
     {
-        return array (  101 => 78,  25 => 5,  19 => 1,);
+        return array (  161 => 138,  25 => 5,  19 => 1,);
     }
 }
