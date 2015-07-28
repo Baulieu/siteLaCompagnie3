@@ -45,6 +45,37 @@ class __TwigTemplate_19c68a16bc40a90e1ee79cdf37ca9cb762fa7ad26746cede63922fa9935
         <div class=\"tab-pane active\" id=\"openDesk\">
             <br>
             <p>la Compagnie est maker officiel du réseau OpenDesk depuis plus d'un an. N'hésitez pas à fouiller leur catalogue pour trouver votre bonheur!</p>
+            <br>
+            <div class=\"formulaire\">
+                <form method=\"post\">
+                    <div class=\"form_part\">
+                        <label for=\"prenom\">Prénom :</label>
+                        <input type=\"text\" name=\"prenom\">
+                    </div>
+
+                    <div class=\"form_part\">
+                        <label for=\"nom\">Nom :</label>
+                        <input type=\"text\" name=\"nom\">
+                    </div>
+
+                    <div class=\"form_part\">
+                        <label for=\"mail\">Mail :</label>
+                        <input type=\"email\" name=\"mail\">
+                    </div>
+
+                    <div class=\"form_part\">
+                        <label for=\"phone\">Téléphone (facultatif) :</label>
+                        <input type=\"tel\" name=\"phone\">
+                    </div>
+
+                    <div class=\"form_part\">
+                        <label for=\"message\">votre demande :</label>
+                        <textarea name=\"message\" rows=\"3\" cols=\"45\"></textarea>
+                    </div>
+
+                    <input type=\"submit\" name=\"openDesk\" value=\"Valider\" class=\"btn btn-primary\">
+                </form>
+            </div>
         </div>
         <div class=\"tab-pane\" id=\"catalogue\">
             <br>
@@ -66,7 +97,7 @@ class __TwigTemplate_19c68a16bc40a90e1ee79cdf37ca9cb762fa7ad26746cede63922fa9935
 <script src=\"//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js\"></script>
 <script src=\"//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js\"></script>
 <script src=\"";
-        // line 47
+        // line 78
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/lcbvitrine/js/responsive-tabs.js"), "html", null, true);
         echo "\"></script>
 <script type=\"text/javascript\">
@@ -114,6 +145,6 @@ class __TwigTemplate_19c68a16bc40a90e1ee79cdf37ca9cb762fa7ad26746cede63922fa9935
 
     public function getDebugInfo()
     {
-        return array (  70 => 47,  25 => 5,  19 => 1,);
+        return array (  101 => 78,  25 => 5,  19 => 1,);
     }
 }
