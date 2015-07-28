@@ -2,16 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b1e25b3-3085-4f5c-83f2-2af2bfe77ed6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Lcb/VitrineBundle/Resources/views/Default/merci.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/appDevUrlGenerator.php.meta" afterPath="$PROJECT_DIR$/app/cache/dev/appDevUrlGenerator.php.meta" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/19/c6/8a16bc40a90e1ee79cdf37ca9cb762fa7ad26746cede63922fa9935dc726.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/19/c6/8a16bc40a90e1ee79cdf37ca9cb762fa7ad26746cede63922fa9935dc726.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Lcb/VitrineBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/src/Lcb/VitrineBundle/Controller/DefaultController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/appDevUrlGenerator.php" afterPath="$PROJECT_DIR$/app/cache/dev/appDevUrlGenerator.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/appDevUrlMatcher.php" afterPath="$PROJECT_DIR$/app/cache/dev/appDevUrlMatcher.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Lcb/VitrineBundle/Resources/views/Default/boutique.html.twig" afterPath="$PROJECT_DIR$/src/Lcb/VitrineBundle/Resources/views/Default/boutique.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/logs/dev.log" afterPath="$PROJECT_DIR$/app/logs/dev.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/index.csv" afterPath="$PROJECT_DIR$/app/cache/dev/profiler/index.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Lcb/VitrineBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/src/Lcb/VitrineBundle/Resources/config/routing.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Lcb/VitrineBundle/Resources/views/Default/merci.html.twig" afterPath="$PROJECT_DIR$/src/Lcb/VitrineBundle/Resources/views/Default/merci.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="siteLcb3.iws" />
@@ -52,8 +46,8 @@
       <file leaf-file-name="DefaultController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Lcb/VitrineBundle/Controller/DefaultController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-19.703703" vertical-offset="3158" max-vertical-offset="3852">
-              <caret line="205" column="73" selection-start-line="205" selection-start-column="73" selection-end-line="205" selection-end-column="73" />
+            <state vertical-scroll-proportion="-16.0" vertical-offset="3600" max-vertical-offset="4194">
+              <caret line="224" column="31" selection-start-line="224" selection-start-column="31" selection-end-line="224" selection-end-column="31" />
               <folding>
                 <element signature="e#48#105#0#PHP" expanded="true" />
               </folding>
@@ -61,51 +55,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="merci.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Lcb/VitrineBundle/Resources/views/Default/merci.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.3333335" vertical-offset="0" max-vertical-offset="288">
-              <caret line="8" column="68" selection-start-line="8" selection-start-column="68" selection-end-line="8" selection-end-column="68" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Lcb/VitrineBundle/Resources/views/Default/index.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="586">
-              <caret line="0" column="17" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="routing.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Lcb/VitrineBundle/Resources/config/routing.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="467" max-vertical-offset="1152">
-              <caret line="58" column="60" selection-start-line="58" selection-start-column="60" selection-end-line="58" selection-end-column="60" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="message.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Lcb/VitrineBundle/Entity/message.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.0" vertical-offset="1602" max-vertical-offset="3114">
-              <caret line="104" column="34" selection-start-line="104" selection-start-column="34" selection-end-line="104" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="boutique.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Lcb/VitrineBundle/Resources/views/Default/boutique.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="3150">
-              <caret line="0" column="15" selection-start-line="0" selection-start-column="15" selection-end-line="0" selection-end-column="15" />
+            <state vertical-scroll-proportion="21.333334" vertical-offset="864" max-vertical-offset="3150">
+              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -114,8 +68,18 @@
       <file leaf-file-name="ajout.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Lcb/VitrineBundle/Resources/views/Default/ajout.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="445" max-vertical-offset="1116">
+            <state vertical-scroll-proportion="10.481482" vertical-offset="445" max-vertical-offset="1116">
               <caret line="9" column="35" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="merci.html.twig" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Lcb/VitrineBundle/Resources/views/Default/merci.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.24573378" vertical-offset="0" max-vertical-offset="586">
+              <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -152,8 +116,8 @@
         <option value="$PROJECT_DIR$/src/Lcb/VitrineBundle/Resources/views/layout.html.twig" />
         <option value="$PROJECT_DIR$/src/Lcb/VitrineBundle/Resources/public/css/boutique.css" />
         <option value="$PROJECT_DIR$/src/Lcb/VitrineBundle/Resources/config/routing.yml" />
-        <option value="$PROJECT_DIR$/src/Lcb/VitrineBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/src/Lcb/VitrineBundle/Resources/views/Default/boutique.html.twig" />
+        <option value="$PROJECT_DIR$/src/Lcb/VitrineBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/src/Lcb/VitrineBundle/Resources/views/Default/merci.html.twig" />
       </list>
     </option>
@@ -163,7 +127,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="y" value="-876" />
+    <option name="x" value="1600" />
+    <option name="y" value="24" />
     <option name="width" value="1600" />
     <option name="height" value="876" />
   </component>
@@ -636,11 +601,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="-876" width="1600" height="876" extended-state="6" />
-    <editor active="false" />
+    <frame x="1600" y="24" width="1600" height="876" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3279503" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20124224" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20124224" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32919255" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5765766" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24967907" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1000,34 +965,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Lcb/VitrineBundle/Resources/views/Default/ajout.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/Lcb/VitrineBundle/Resources/config/routing.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="445" max-vertical-offset="1116">
-          <caret line="9" column="35" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="35" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="467" max-vertical-offset="1152">
+          <caret line="58" column="60" selection-start-line="58" selection-start-column="60" selection-end-line="58" selection-end-column="60" />
+          <folding>
+            <marker date="1438113068417" expanded="true" signature="-1:-1" placeholder="lcb_ajoutFiche:" />
+            <marker date="1438113068417" expanded="true" signature="-1:-1" placeholder="lcb_merci:" />
+            <marker date="1438113068417" expanded="true" signature="-1:-1" placeholder="defaults:" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Lcb/VitrineBundle/Resources/views/Default/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="586">
+          <caret line="0" column="17" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Lcb/VitrineBundle/Entity/message.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.0" vertical-offset="1602" max-vertical-offset="3114">
+        <state vertical-scroll-proportion="0.46075085" vertical-offset="1602" max-vertical-offset="3114">
           <caret line="104" column="34" selection-start-line="104" selection-start-column="34" selection-end-line="104" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Lcb/VitrineBundle/Resources/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="467" max-vertical-offset="1152">
-          <caret line="58" column="60" selection-start-line="58" selection-start-column="60" selection-end-line="58" selection-end-column="60" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Lcb/VitrineBundle/Controller/DefaultController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.703703" vertical-offset="3158" max-vertical-offset="3852">
-          <caret line="205" column="73" selection-start-line="205" selection-start-column="73" selection-end-line="205" selection-end-column="73" />
+        <state vertical-scroll-proportion="-16.0" vertical-offset="3600" max-vertical-offset="4194">
+          <caret line="224" column="31" selection-start-line="224" selection-start-column="31" selection-end-line="224" selection-end-column="31" />
           <folding>
             <element signature="e#48#105#0#PHP" expanded="true" />
           </folding>
@@ -1036,24 +1005,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Lcb/VitrineBundle/Resources/views/Default/boutique.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3150">
-          <caret line="0" column="15" selection-start-line="0" selection-start-column="15" selection-end-line="0" selection-end-column="15" />
+        <state vertical-scroll-proportion="21.333334" vertical-offset="864" max-vertical-offset="3150">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Lcb/VitrineBundle/Resources/views/Default/ajout.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="10.481482" vertical-offset="445" max-vertical-offset="1116">
+          <caret line="9" column="35" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Lcb/VitrineBundle/Resources/views/Default/merci.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.3333335" vertical-offset="0" max-vertical-offset="288">
-          <caret line="8" column="68" selection-start-line="8" selection-start-column="68" selection-end-line="8" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Lcb/VitrineBundle/Resources/views/Default/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="586">
-          <caret line="0" column="17" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.24573378" vertical-offset="0" max-vertical-offset="586">
+          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
           <folding />
         </state>
       </provider>

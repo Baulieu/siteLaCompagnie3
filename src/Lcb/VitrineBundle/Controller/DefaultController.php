@@ -76,11 +76,30 @@ class DefaultController extends Controller
 
         $message = new message();
 
-        $message->setDate(date("d-m-Y"));
+        $message->setDate(new \DateTime(date('Y-m-d H:i:s')));
+
+        $request = $this->get('request');
+
+        if ($request->getMethod() != 'POST')
+        {
+            return $this->render('LcbVitrineBundle:Default:boutique.html.twig');
+        }
 
         if (isset($_POST['openDesk']))
         {
-            return $this->redirect($this->generateUrl('lcb_accueil'));
+            $message->setMail($_POST['mail']);
+            $message->setNom($_POST['nom']);
+            $message->setPrenom($_POST['prenom']);
+
+            $contenu = "**********  Nouveau message pour une commande pour un meuble OpenDesk!  **********\n\n\n".$_POST['message'];
+            $message->setText($contenu);
+
+            $em = $this->getDoctrine()->getEntityManager();
+            $em->persist($message);
+            $em->flush();
+            return $this->redirect($this->generateUrl('lcb_merci'));
+
+            return $this->redirect($this->generateUrl('lcb_merci'));
         }
 
         if (isset($_POST['catalogue']))
@@ -203,6 +222,6 @@ class DefaultController extends Controller
 
     public function merciAction()
     {
-        return $this->render('lcbVitrineBundle:Default:merci.html.twig');
+        return $this->render('LcbVitrineBundle:Default:merci.html.twig');
     }
 }
