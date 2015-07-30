@@ -233,13 +233,13 @@ class DefaultController extends Controller
         return $this->render('LcbVitrineBundle:Default:index.html.twig', array('name' => 'fiches'));
     }
 
-    public function ajoutFicheAction()
-    {
-        return $this->render('LcbVitrineBundle:Default:index.html.twig', array('name' => 'ajoutFiches'));
-    }
-
     public function merciAction()
     {
         return $this->render('LcbVitrineBundle:Default:merci.html.twig');
+    }
+
+    public function ajoutFichesAction()
+    {
+        return $this->render('LcbVitrineBundle:Default:index.html.twig', array('name' => 'ajoutFiches'));
     }
 }

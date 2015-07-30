@@ -48,30 +48,30 @@ class __TwigTemplate_19c68a16bc40a90e1ee79cdf37ca9cb762fa7ad26746cede63922fa9935
             <p>la Compagnie est maker officiel du réseau OpenDesk depuis plus d'un an. N'hésitez pas à fouiller leur catalogue pour trouver votre bonheur!</p>
             <br>
             <div class=\"formulaire\">
-                <form method=\"post\">
-                    <div class=\"form_part\">
+                <form method=\"post\" role=\"form\">
+                    <div class=\"form-group\">
                         <label for=\"prenom\">Prénom :</label>
-                        <input type=\"text\" name=\"prenom\">
+                        <input type=\"text\" name=\"prenom\" class=\"form-control\" placeholder=\"Entrez votre prénom\" required>
                     </div>
 
-                    <div class=\"form_part\">
+                    <div class=\"form-group\">
                         <label for=\"nom\">Nom :</label>
-                        <input type=\"text\" name=\"nom\">
+                        <input type=\"text\" name=\"nom\" class=\"form-control\" placeholder=\"Entrez votre nom\" required>
                     </div>
 
-                    <div class=\"form_part\">
+                    <div class=\"form-group\">
                         <label for=\"mail\">Mail :</label>
-                        <input type=\"email\" name=\"mail\">
+                        <input type=\"email\" name=\"mail\" class=\"form-control\" placeholder=\"Entrez votre adresse mail\" required>
                     </div>
 
-                    <div class=\"form_part\">
+                    <div class=\"form-group\">
                         <label for=\"phone\">Téléphone (facultatif) :</label>
-                        <input type=\"tel\" name=\"phone\">
+                        <input type=\"tel\" name=\"phone\" class=\"form-control\" placeholder=\"Entrez votre numéro de téléphone\">
                     </div>
 
-                    <div class=\"form_part\">
+                    <div class=\"form-group\">
                         <label for=\"message\">votre demande :</label>
-                        <textarea name=\"message\" rows=\"3\" cols=\"45\"></textarea>
+                        <textarea name=\"message\" rows=\"3\" cols=\"45\" class=\"form-control\" placeholder=\"Entrez votre message\" required></textarea>
                     </div>
 
                     <input type=\"submit\" name=\"openDesk\" value=\"Valider\" class=\"btn btn-primary\">
@@ -82,30 +82,30 @@ class __TwigTemplate_19c68a16bc40a90e1ee79cdf37ca9cb762fa7ad26746cede63922fa9935
             <br>
             <p>La Compagnie est fière de vous présenter ses créations originales, ou issues d'autres réseaux qu'OpenDesk!</p>
             <div class=\"formulaire\">
-                <form method=\"post\">
-                    <div class=\"form_part\">
+                <form method=\"post\" role=\"form\">
+                    <div class=\"form-group\">
                         <label for=\"prenom\">Prénom :</label>
-                        <input type=\"text\" name=\"prenom\">
+                        <input type=\"text\" name=\"prenom\" class=\"form-control\" placeholder=\"Entrez votre prénom\" required>
                     </div>
 
-                    <div class=\"form_part\">
+                    <div class=\"form-group\">
                         <label for=\"nom\">Nom :</label>
-                        <input type=\"text\" name=\"nom\">
+                        <input type=\"text\" name=\"nom\" class=\"form-control\" placeholder=\"Entrez votre nom\" required>
                     </div>
 
-                    <div class=\"form_part\">
+                    <div class=\"form-group\">
                         <label for=\"mail\">Mail :</label>
-                        <input type=\"email\" name=\"mail\">
+                        <input type=\"email\" name=\"mail\" class=\"form-control\" placeholder=\"Entrez votre adresse mail\" required>
                     </div>
 
-                    <div class=\"form_part\">
+                    <div class=\"form-group\">
                         <label for=\"phone\">Téléphone (facultatif) :</label>
-                        <input type=\"tel\" name=\"phone\">
+                        <input type=\"tel\" name=\"phone\" class=\"form-control\" placeholder=\"Entrez votre numéro de téléphone\">
                     </div>
 
-                    <div class=\"form_part\">
+                    <div class=\"form-group\">
                         <label for=\"message\">votre demande :</label>
-                        <textarea name=\"message\" rows=\"3\" cols=\"45\"></textarea>
+                        <textarea name=\"message\" rows=\"3\" cols=\"45\" class=\"form-control\" placeholder=\"Entrez votre message\" required></textarea>
                     </div>
 
                     <input type=\"submit\" name=\"catalogue\" value=\"Valider\" class=\"btn btn-primary\">
@@ -119,30 +119,30 @@ class __TwigTemplate_19c68a16bc40a90e1ee79cdf37ca9cb762fa7ad26746cede63922fa9935
             <p>Vous voulez réaliser un objet qui n'est pas encore dans le catalogue?</p>
             <p>La Compagnie sera heureuse de travailler avec vous à la réalisation de votre projet!<br>Dites-nous ce qui vous ferait plaisir:</p>
             <div class=\"formulaire\">
-                <form method=\"post\">
-                    <div class=\"form_part\">
+                <form method=\"post\" role=\"form\">
+                    <div class=\"form-group\">
                         <label for=\"prenom\">Prénom :</label>
-                        <input type=\"text\" name=\"prenom\">
+                        <input type=\"text\" name=\"prenom\" class=\"form-control\" placeholder=\"Entrez votre prénom\" required>
                     </div>
 
-                    <div class=\"form_part\">
+                    <div class=\"form-group\">
                         <label for=\"nom\">Nom :</label>
-                        <input type=\"text\" name=\"nom\">
+                        <input type=\"text\" name=\"nom\" class=\"form-control\" placeholder=\"Entrez votre nom\" required>
                     </div>
 
-                    <div class=\"form_part\">
+                    <div class=\"form-group\">
                         <label for=\"mail\">Mail :</label>
-                        <input type=\"email\" name=\"mail\">
+                        <input type=\"email\" name=\"mail\" class=\"form-control\" placeholder=\"Entrez votre adresse mail\" required>
                     </div>
 
-                    <div class=\"form_part\">
+                    <div class=\"form-group\">
                         <label for=\"phone\">Téléphone (facultatif) :</label>
-                        <input type=\"tel\" name=\"phone\">
+                        <input type=\"tel\" name=\"phone\" class=\"form-control\" placeholder=\"Entrez votre numéro de téléphone\">
                     </div>
 
-                    <div class=\"form_part\">
+                    <div class=\"form-group\">
                         <label for=\"message\">votre demande :</label>
-                        <textarea name=\"message\" rows=\"3\" cols=\"45\"></textarea>
+                        <textarea name=\"message\" rows=\"3\" cols=\"45\" class=\"form-control\" placeholder=\"Entrez votre message\" required></textarea>
                     </div>
 
                     <input type=\"submit\" name=\"vosIdees\" value=\"Valider\" class=\"btn btn-primary\">
