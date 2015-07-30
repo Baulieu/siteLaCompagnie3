@@ -104,6 +104,10 @@ class __TwigTemplate_19c68a16bc40a90e1ee79cdf37ca9cb762fa7ad26746cede63922fa9935
                     </div>
 
                     <div class=\"form-group\">
+                        <input type=\"checkbox\" name=\"tabouret1\" value=\"valuable\" id=\"tabouret1\"/><label for=\"tabouret1\">IZIIII</label>
+                    </div>
+
+                    <div class=\"form-group\">
                         <label for=\"message\">votre demande :</label>
                         <textarea name=\"message\" rows=\"3\" cols=\"45\" class=\"form-control\" placeholder=\"Entrez votre message\" required></textarea>
                     </div>
@@ -158,7 +162,7 @@ class __TwigTemplate_19c68a16bc40a90e1ee79cdf37ca9cb762fa7ad26746cede63922fa9935
 <script src=\"//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js\"></script>
 <script src=\"//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js\"></script>
 <script src=\"";
-        // line 139
+        // line 143
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/lcbvitrine/js/responsive-tabs.js"), "html", null, true);
         echo "\"></script>
 <script type=\"text/javascript\">
@@ -206,6 +210,6 @@ class __TwigTemplate_19c68a16bc40a90e1ee79cdf37ca9cb762fa7ad26746cede63922fa9935
 
     public function getDebugInfo()
     {
-        return array (  162 => 139,  26 => 6,  19 => 1,);
+        return array (  166 => 143,  26 => 6,  19 => 1,);
     }
 }
