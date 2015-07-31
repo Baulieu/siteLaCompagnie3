@@ -5,6 +5,7 @@ namespace Lcb\VitrineBundle\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Lcb\VitrineBundle\Entity\message;
 use Lcb\VitrineBundle\Entity\Article;
+use Lcb\VitrineBundle\Entity\Meuble;
 
 class DefaultController extends Controller
 {
@@ -76,10 +77,13 @@ class DefaultController extends Controller
 
         // TODO chercher les meubles openDesk depuis leur sitezer.
         $repository = $this->getDoctrine()->getManager()->getRepository('LcbVitrineBundle:Meuble');
-        $meubles_compagnie = $repository->findAll();
+        $meubles_compagnie_temp = $repository->findAll();
+        $meubles_compagnie = array();
+        foreach($meubles_compagnie_temp as $m)
+            $meubles_compagnie [] = $m->getNom();
 
         $meubles_odesk = array('chaise1', 'chaise2', 'chaise3', 'chaise4', 'chaise5', 'chaise6', 'chaise7');
-        $meubles_compagnie = array('table1', 'table2', 'table3', 'table4', 'table5');
+        //$meubles_compagnie = array('table1', 'table2', 'table3', 'table4', 'table5');
 
         $message = new message();
 
@@ -263,6 +267,24 @@ class DefaultController extends Controller
         if (!$this->get('security.context')->isGranted('ROLE_ADMIN'))
             return $this->redirect($this->generateUrl('lcb_accueil'));
 
-        return $this->render('LcbVitrineBundle:Default:ajoutMeubles.html.twig');
+        $meuble = new Meuble();
+        $meuble->setPhoto("tabouret1.jpg");
+
+        $request = $this->get('request');
+
+        if ($request->getMethod() != 'POST')
+        {
+            return $this->render('LcbVitrineBundle:Default:ajoutMeubles.html.twig');
+        }
+
+        $meuble->setNom($_POST['nom']);
+        $meuble->setNbPlaques($_POST['nb_plaques']);
+        $meuble->setPrix($_POST['prix']);
+
+        $em = $this->getDoctrine()->getEntityManager();
+        $em->persist($meuble);
+        $em->flush();
+
+        return $this->redirect($this->generateUrl('lcb_accueil'));
     }
 }
