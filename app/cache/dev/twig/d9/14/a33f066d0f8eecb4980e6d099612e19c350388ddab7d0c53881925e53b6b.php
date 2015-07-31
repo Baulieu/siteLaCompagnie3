@@ -111,7 +111,7 @@ class __TwigTemplate_d914a33f066d0f8eecb4980e6d099612e19c350388ddab7d0c53881925e
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container -->
-    </nav>
+    </nav><input type=\"date\" name=\"date\" class=\"form-control\" placeholder=\"Date\" required>
 
 
     <!-- Header -->
@@ -334,7 +334,7 @@ class __TwigTemplate_d914a33f066d0f8eecb4980e6d099612e19c350388ddab7d0c53881925e
                             <a href=\"#contact\">Contact</a>
                         </li>
                     </ul>
-                    <p class=\"copyright text-muted small\">By la Compagnie du Bátar - drakkar building since 2011 - world first conneciton to Valhalla</p>
+                    <p class=\"copyright text-muted small\">By la Compagnie du Bátar - drakkar building since 2011 - world first connection to Valhalla</p>
                 </div>
             </div>
         </div>
