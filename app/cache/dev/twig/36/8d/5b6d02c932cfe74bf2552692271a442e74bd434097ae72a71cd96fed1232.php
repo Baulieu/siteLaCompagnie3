@@ -58,53 +58,107 @@ class __TwigTemplate_368d5b6d02c932cfe74bf2552692271a442e74bd434097ae72a71cd96fe
     </head>
 
     <body>
+    <nav class=\"navbar navbar-default navbar-fixed-top topnav\" role=\"navigation\">
+        <div class=\"container topnav\">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class=\"navbar-header\">
+                <button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\">
+                    <span class=\"sr-only\">Toggle navigation</span>
+                    <span class=\"icon-bar\"></span>
+                    <span class=\"icon-bar\"></span>
+                    <span class=\"icon-bar\"></span>
+                </button>
+                <a class=\"navbar-brand topnav\" href=\"";
+        // line 42
+        echo $this->env->getExtension('routing')->getPath("lcb_accueil");
+        echo "\">Bienvenue à bord, Bátar</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class=\"collapse navbar-collapse\" id=\"bs-example-navbar-collapse-1\">
+                <ul class=\"nav navbar-nav navbar-right\">
+                    <li>
+                        <a href=\"";
+        // line 48
+        echo $this->env->getExtension('routing')->getPath("lcb_news");
+        echo "\">Les News</a>
+                    </li>
+                    <li>
+                        <a href=\"";
+        // line 51
+        echo $this->env->getExtension('routing')->getPath("lcb_projet");
+        echo "\">Le Projet</a>
+                    </li>
+                    <li>
+                        <a href=\"";
+        // line 54
+        echo $this->env->getExtension('routing')->getPath("lcb_boutique");
+        echo "\">La Boutique</a>
+                    </li>
+                    <li>
+                        <a href=\"";
+        // line 57
+        echo $this->env->getExtension('routing')->getPath("lcb_batars");
+        echo "\">Les Bátars</a>
+                    </li>
+                    <li>
+                        <a href=\"";
+        // line 60
+        echo $this->env->getExtension('routing')->getPath("lcb_contact");
+        echo "\">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
         ";
-        // line 32
+        // line 68
         $this->displayBlock('body', $context, $blocks);
-        // line 34
+        // line 70
         echo "
         <!-- jQuery -->
         <script src=\"//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js\"></script>
         <!--<script src=\"";
-        // line 37
+        // line 73
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/lcbvitrine/js/jquery.js"), "html", null, true);
         echo "\"></script>-->
 
         <!-- Bootstrap Core JavaScript -->
         <script src=\"//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js\"></script>
         <!--<script src=\"";
-        // line 41
+        // line 77
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/lcbvitrine/js/bootstrap.min.js"), "html", null, true);
         echo "\"></script>-->
 
         <!-- Special Scripts for this page -->
         <script src=\"";
-        // line 44
+        // line 80
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/lcbvitrine/js/accueil.js"), "html", null, true);
         echo "\"></script>
         <script src=\"";
-        // line 45
+        // line 81
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/lcbvitrine/js/jquery.parallax-1.1.3.js"), "html", null, true);
         echo "\"></script>
         ";
-        // line 46
+        // line 82
         $this->displayBlock('end_block', $context, $blocks);
-        // line 48
+        // line 84
         echo "    </body>
 </html>";
     }
 
-    // line 32
+    // line 68
     public function block_body($context, array $blocks = array())
     {
-        // line 33
+        // line 69
         echo "        ";
     }
 
-    // line 46
+    // line 82
     public function block_end_block($context, array $blocks = array())
     {
-        // line 47
+        // line 83
         echo "        ";
     }
 
@@ -120,6 +174,6 @@ class __TwigTemplate_368d5b6d02c932cfe74bf2552692271a442e74bd434097ae72a71cd96fe
 
     public function getDebugInfo()
     {
-        return array (  108 => 47,  105 => 46,  101 => 33,  98 => 32,  93 => 48,  91 => 46,  87 => 45,  83 => 44,  77 => 41,  70 => 37,  65 => 34,  63 => 32,  48 => 20,  42 => 17,  36 => 14,  21 => 1,);
+        return array (  162 => 83,  159 => 82,  155 => 69,  152 => 68,  147 => 84,  145 => 82,  141 => 81,  137 => 80,  131 => 77,  124 => 73,  119 => 70,  117 => 68,  106 => 60,  100 => 57,  94 => 54,  88 => 51,  82 => 48,  73 => 42,  48 => 20,  42 => 17,  36 => 14,  21 => 1,);
     }
 }
