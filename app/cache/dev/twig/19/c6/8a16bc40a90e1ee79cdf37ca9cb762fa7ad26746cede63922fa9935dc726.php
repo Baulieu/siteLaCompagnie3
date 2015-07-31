@@ -102,16 +102,22 @@ class __TwigTemplate_19c68a16bc40a90e1ee79cdf37ca9cb762fa7ad26746cede63922fa9935
                         <label for=\"phone\">Téléphone (facultatif) :</label>
                         <input type=\"tel\" name=\"phone\" class=\"form-control\" placeholder=\"Entrez votre numéro de téléphone\">
                     </div>
-                    
+
                     <label>Les modèles qui vous intéressent :</label>
 
                     <div class=\"form-group\">
                         <input type=\"checkbox\" name=\"tabouret1\" value=\"valuable\" id=\"tabouret1\"/><label for=\"tabouret1\"></label>
-                        <input type=\"checkbox\" name=\"tabouret2\" value=\"valuable\" id=\"tabouret2\"/><label for=\"tabouret1\"></label>
-                        <input type=\"checkbox\" name=\"tabouret3\" value=\"valuable\" id=\"tabouret3\"/><label for=\"tabouret1\"></label>
-                        <input type=\"checkbox\" name=\"tabouret4\" value=\"valuable\" id=\"tabouret4\"/><label for=\"tabouret1\"></label>
-                        <input type=\"checkbox\" name=\"tabouret5\" value=\"valuable\" id=\"tabouret5\"/><label for=\"tabouret1\"></label>
+                        <input type=\"checkbox\" name=\"tabouret2\" value=\"valuable\" id=\"tabouret2\"/><label for=\"tabouret2\"></label>
+                        <input type=\"checkbox\" name=\"tabouret3\" value=\"valuable\" id=\"tabouret3\"/><label for=\"tabouret3\"></label>
+                        <input type=\"checkbox\" name=\"tabouret4\" value=\"valuable\" id=\"tabouret4\"/><label for=\"tabouret4\"></label>
+                        <input type=\"checkbox\" name=\"tabouret5\" value=\"valuable\" id=\"tabouret5\"/><label for=\"tabouret5\"></label>
                     </div>
+
+                    <label>Les modèles qui vous intéressent :</label>
+
+                    <!--<div class=\"form-group\">
+
+                    </div>-->
 
                     <div class=\"form-group\">
                         <label for=\"message\">votre demande :</label>
@@ -168,7 +174,7 @@ class __TwigTemplate_19c68a16bc40a90e1ee79cdf37ca9cb762fa7ad26746cede63922fa9935
 <script src=\"//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js\"></script>
 <script src=\"//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js\"></script>
 <script src=\"";
-        // line 149
+        // line 155
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/lcbvitrine/js/responsive-tabs.js"), "html", null, true);
         echo "\"></script>
 <script type=\"text/javascript\">
@@ -216,6 +222,6 @@ class __TwigTemplate_19c68a16bc40a90e1ee79cdf37ca9cb762fa7ad26746cede63922fa9935
 
     public function getDebugInfo()
     {
-        return array (  172 => 149,  26 => 6,  19 => 1,);
+        return array (  178 => 155,  26 => 6,  19 => 1,);
     }
 }

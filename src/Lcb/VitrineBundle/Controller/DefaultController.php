@@ -130,7 +130,11 @@ class DefaultController extends Controller
             return $this->redirect($this->generateUrl('lcb_merci'));
         }
 
-		return $this->render('LcbVitrineBundle:Default:boutique.html.twig');
+        // TODO chercher les meubles de la compagnie et les meubles opendesk depuis la base de données.
+
+        $meubles = array('tabouret1', 'tabouret2', 'tabouret3', 'tabouret4', 'tabouret5');
+
+		return $this->render('LcbVitrineBundle:Default:boutique.html.twig', array('meubles' => $meubles));
 	}
 
 	public function batarsAction()
