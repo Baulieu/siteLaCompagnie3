@@ -70,8 +70,8 @@ class DefaultController extends Controller
 	public function boutiqueAction()
 	{
 		/**
-         * en principe: faire une redirection simple vers "boutique.lacompagniedubatar.fr" -> ce sera le cas dans le futur
-         * pour l'instant on garde tout dans le même projet pour simplifier le développement.
+         * En principe: faire une redirection simple vers "boutique.lacompagniedubatar.fr" -> ce sera le cas dans le turfu.
+         * Pour l'instant on garde tout dans le même projet pour simplifier le développement.
 		*/
 
         // TODO chercher les meubles de la compagnie et les meubles opendesk depuis la base de données.
@@ -96,7 +96,15 @@ class DefaultController extends Controller
             $message->setNom($_POST['nom']);
             $message->setPrenom($_POST['prenom']);
 
-            $contenu = "**********  Nouveau message pour une commande pour un meuble OpenDesk!  **********\n\n\n".$_POST['message'];
+            $contenu = "**********  Nouveau message pour une commande pour un meuble OpenDesk!  **********\n";
+
+            foreach ($meubles_odesk as $meuble)
+            {
+                if (isset($_POST[$meuble]))
+                    $contenu = $contenu."\nIntéressé par : ".$meuble;
+            }
+            $contenu = $contenu."\n\n\n".$_POST['message'];
+
             $message->setText($contenu);
 
             $em = $this->getDoctrine()->getEntityManager();

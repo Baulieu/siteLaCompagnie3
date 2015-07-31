@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b1e25b3-3085-4f5c-83f2-2af2bfe77ed6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/19/c6/8a16bc40a90e1ee79cdf37ca9cb762fa7ad26746cede63922fa9935dc726.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/19/c6/8a16bc40a90e1ee79cdf37ca9cb762fa7ad26746cede63922fa9935dc726.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Lcb/VitrineBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/src/Lcb/VitrineBundle/Controller/DefaultController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Lcb/VitrineBundle/Resources/views/Default/boutique.html.twig" afterPath="$PROJECT_DIR$/src/Lcb/VitrineBundle/Resources/views/Default/boutique.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/logs/dev.log" afterPath="$PROJECT_DIR$/app/logs/dev.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/index.csv" afterPath="$PROJECT_DIR$/app/cache/dev/profiler/index.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="siteLcb3.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -54,11 +49,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DefaultController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="DefaultController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Lcb/VitrineBundle/Controller/DefaultController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-52.0" vertical-offset="0" max-vertical-offset="4608">
-              <caret line="78" column="105" selection-start-line="78" selection-start-column="105" selection-end-line="78" selection-end-column="105" />
+            <state vertical-scroll-proportion="0.33333334" vertical-offset="1519" max-vertical-offset="4752">
+              <caret line="98" column="110" selection-start-line="98" selection-start-column="110" selection-end-line="98" selection-end-column="110" />
               <folding>
                 <element signature="e#48#105#0#PHP" expanded="true" />
               </folding>
@@ -66,11 +61,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="boutique.html.twig" pinned="false" current-in-tab="true">
+      <file leaf-file-name="boutique.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Lcb/VitrineBundle/Resources/views/Default/boutique.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.15706806" vertical-offset="0" max-vertical-offset="3528">
-              <caret line="5" column="90" selection-start-line="5" selection-start-column="90" selection-end-line="5" selection-end-column="90" />
+            <state vertical-scroll-proportion="-38.666668" vertical-offset="270" max-vertical-offset="3528">
+              <caret line="73" column="36" selection-start-line="73" selection-start-column="36" selection-end-line="73" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -148,8 +143,8 @@
         <option value="$PROJECT_DIR$/src/Lcb/VitrineBundle/Resources/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/Lcb/VitrineBundle/Resources/views/Default/merci.html.twig" />
         <option value="$PROJECT_DIR$/src/Lcb/VitrineBundle/Resources/public/css/boutique.css" />
-        <option value="$PROJECT_DIR$/src/Lcb/VitrineBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/src/Lcb/VitrineBundle/Resources/views/Default/boutique.html.twig" />
+        <option value="$PROJECT_DIR$/src/Lcb/VitrineBundle/Controller/DefaultController.php" />
       </list>
     </option>
   </component>
@@ -557,6 +552,22 @@
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="SearchEverywhereHistoryKey" value="bouti&#9;FILE&#9;file:///home/baulieu/dev/siteLaCompagnie3/src/Lcb/VitrineBundle/Resources/views/Default/boutique.html.twig&#10;ajou&#9;FILE&#9;file:///home/baulieu/dev/siteLaCompagnie3/src/Lcb/VitrineBundle/Resources/views/Default/ajout.html.twig&#10;ajout&#9;null&#9;null&#10;rout&#9;FILE&#9;file:///home/baulieu/dev/siteLaCompagnie3/src/Lcb/VitrineBundle/Resources/config/routing.yml&#10;contro&#9;FILE&#9;file:///home/baulieu/dev/siteLaCompagnie3/src/Lcb/VitrineBundle/Controller/DefaultController.php&#10;contr&#9;FILE&#9;file:///home/baulieu/dev/siteLaCompagnie3/src/Lcb/VitrineBundle/Controller/DefaultController.php&#10;se&#9;FILE&#9;file:///home/baulieu/PhpstormProjects/siteLcb3/app/config/security.yml&#10;routin&#9;FILE&#9;file:///home/baulieu/PhpstormProjects/siteLcb3/app/config/routing.yml" />
     <property name="dynamic.classpath" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="135" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="155" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="161" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="1060" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="135" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="155" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="161" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="1060" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -636,7 +647,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3279503" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20124224" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20124224" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32919255" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5765766" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24967907" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -645,7 +656,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22136422" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27250308" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32919255" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1037,21 +1048,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Lcb/VitrineBundle/Controller/DefaultController.php">
+    <entry file="file://$PROJECT_DIR$/src/Lcb/VitrineBundle/Resources/views/Default/boutique.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-52.0" vertical-offset="0" max-vertical-offset="4608">
-          <caret line="78" column="105" selection-start-line="78" selection-start-column="105" selection-end-line="78" selection-end-column="105" />
-          <folding>
-            <element signature="e#48#105#0#PHP" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="-38.666668" vertical-offset="270" max-vertical-offset="3528">
+          <caret line="73" column="36" selection-start-line="73" selection-start-column="36" selection-end-line="73" selection-end-column="36" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Lcb/VitrineBundle/Resources/views/Default/boutique.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/Lcb/VitrineBundle/Controller/DefaultController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15706806" vertical-offset="0" max-vertical-offset="3528">
-          <caret line="5" column="90" selection-start-line="5" selection-start-column="90" selection-end-line="5" selection-end-column="90" />
-          <folding />
+        <state vertical-scroll-proportion="0.33333334" vertical-offset="1519" max-vertical-offset="4752">
+          <caret line="98" column="110" selection-start-line="98" selection-start-column="110" selection-end-line="98" selection-end-column="110" />
+          <folding>
+            <element signature="e#48#105#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
