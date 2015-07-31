@@ -57,3 +57,7 @@ lcb_ajoutFiche:
 lcb_merci:
     path:     /merci
     defaults: { _controller: LcbVitrineBundle:Default:merci }
+
+lcb_ajout_meuble:
+    path:     /ajout_meuble
+    defaults: { _controller: LcbVitrineBundle:Default:ajoutMeuble }

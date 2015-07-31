@@ -6,46 +6,31 @@ use Doctrine\ORM\Mapping as ORM;
 
 /**
  * Meuble
- *
- * @ORM\Table()
- * @ORM\Entity(repositoryClass="Lcb\VitrineBundle\Entity\MeubleRepository")
  */
 class Meuble
 {
     /**
      * @var integer
-     *
-     * @ORM\Column(name="id", type="integer")
-     * @ORM\Id
-     * @ORM\GeneratedValue(strategy="AUTO")
      */
     private $id;
 
     /**
      * @var string
-     *
-     * @ORM\Column(name="nom", type="string", length=255)
      */
     private $nom;
 
     /**
      * @var integer
-     *
-     * @ORM\Column(name="prix", type="integer")
      */
     private $prix;
 
     /**
      * @var string
-     *
-     * @ORM\Column(name="photo", type="string", length=255)
      */
     private $photo;
 
     /**
      * @var integer
-     *
-     * @ORM\Column(name="nb_plaques", type="integer")
      */
     private $nbPlaques;
 

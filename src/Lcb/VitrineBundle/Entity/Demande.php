@@ -6,67 +6,46 @@ use Doctrine\ORM\Mapping as ORM;
 
 /**
  * Demande
- *
- * @ORM\Table()
- * @ORM\Entity(repositoryClass="Lcb\VitrineBundle\Entity\DemandeRepository")
  */
 class Demande
 {
     /**
      * @var integer
-     *
-     * @ORM\Column(name="id", type="integer")
-     * @ORM\Id
-     * @ORM\GeneratedValue(strategy="AUTO")
      */
     private $id;
 
     /**
      * @var string
-     *
-     * @ORM\Column(name="nom", type="string", length=255)
      */
     private $nom;
 
     /**
      * @var string
-     *
-     * @ORM\Column(name="prenom", type="string", length=255)
      */
     private $prenom;
 
     /**
      * @var string
-     *
-     * @ORM\Column(name="mail", type="string", length=255)
      */
     private $mail;
 
     /**
      * @var string
-     *
-     * @ORM\Column(name="phone", type="string", length=255)
      */
     private $phone;
 
     /**
      * @var \DateTime
-     *
-     * @ORM\Column(name="date", type="datetime")
      */
     private $date;
 
     /**
      * @var string
-     *
-     * @ORM\Column(name="type", type="string", length=255)
      */
     private $type;
 
     /**
      * @var string
-     *
-     * @ORM\Column(name="message", type="text")
      */
     private $message;
 

@@ -1,0 +1,31 @@
+Lcb\VitrineBundle\Entity\Demande:
+    type: entity
+    table: null
+    repositoryClass: Lcb\VitrineBundle\Entity\DemandeRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        nom:
+            type: string
+            length: 255
+        prenom:
+            type: string
+            length: 255
+        mail:
+            type: string
+            length: 255
+        phone:
+            type: string
+            length: 255
+        date:
+            type: datetime
+        type:
+            type: string
+            length: 255
+        message:
+            type: text
+    lifecycleCallbacks: {  }

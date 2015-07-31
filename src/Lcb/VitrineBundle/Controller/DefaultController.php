@@ -74,7 +74,9 @@ class DefaultController extends Controller
          * Pour l'instant on garde tout dans le même projet pour simplifier le développement.
 		*/
 
-        // TODO chercher les meubles de la compagnie et les meubles opendesk depuis la base de données.
+        // TODO chercher les meubles openDesk depuis leur sitezer.
+        $repository = $this->getDoctrine()->getManager()->getRepository('LcbVitrineBundle:Meuble');
+        $meubles_compagnie = $repository->findAll();
 
         $meubles_odesk = array('chaise1', 'chaise2', 'chaise3', 'chaise4', 'chaise5', 'chaise6', 'chaise7');
         $meubles_compagnie = array('table1', 'table2', 'table3', 'table4', 'table5');
@@ -254,5 +256,13 @@ class DefaultController extends Controller
     public function ajoutFichesAction()
     {
         return $this->render('LcbVitrineBundle:Default:index.html.twig', array('name' => 'ajoutFiches'));
+    }
+
+    public function ajoutMeubleAction()
+    {
+        if (!$this->get('security.context')->isGranted('ROLE_ADMIN'))
+            return $this->redirect($this->generateUrl('lcb_accueil'));
+
+        return $this->render('LcbVitrineBundle:Default:ajoutMeubles.html.twig');
     }
 }

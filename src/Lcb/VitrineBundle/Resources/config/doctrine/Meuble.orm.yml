@@ -1,0 +1,23 @@
+Lcb\VitrineBundle\Entity\Meuble:
+    type: entity
+    table: null
+    repositoryClass: Lcb\VitrineBundle\Entity\MeubleRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        nom:
+            type: string
+            length: 255
+        prix:
+            type: integer
+        photo:
+            type: string
+            length: 255
+        nbPlaques:
+            type: integer
+            column: nb_plaques
+    lifecycleCallbacks: {  }

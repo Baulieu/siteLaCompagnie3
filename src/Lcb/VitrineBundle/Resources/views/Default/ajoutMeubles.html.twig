@@ -1,0 +1,26 @@
+{% extends 'LcbVitrineBundle::layout.html.twig' %}
+
+{% block body %}
+    <div class="well">
+        <form method="post" role="form">
+            <div class="form-group">
+                <label for="nom"></label>
+                <input type="text" name="nom" class="form-control" placeholder="nom du meublezer" required>
+            </div>
+
+            <div class="form-group">
+                <label for="prix"></label>
+                <input type="number" name="prix" class="form-control" placeholder="40000" required>
+            </div>
+
+            <div class="form-group">
+                <label for="nb_plaques"></label>
+                <input type="number" name="nb_plaques" class="form-control" placeholder="1" required>
+            </div>
+
+            <p>TODO : ajouter un uploader de photo carrée 200x200px pour faire l'image dans la galerie de sélection.</p>
+
+            <input type="submit" name="ajout" value="Ajouter" class="btn btn-primary">
+        </form>
+    </div>
+{% endblock %}
