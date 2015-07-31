@@ -3,6 +3,7 @@
 <head>
     <title>page boutique</title>
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ asset('bundles/lcbvitrine/css/bootstrap.min.css') }}" rel="stylesheet">
     <link href="{{ asset('bundles/lcbvitrine/css/boutique.css') }}" rel="stylesheet">
     <style type="text/css">
         .deco-none {
@@ -48,6 +49,16 @@
                         <input type="tel" name="phone" class="form-control" placeholder="Entrez votre numéro de téléphone">
                     </div>
 
+                    <label>Les modèles qui vous intéressent :</label>
+
+                    <div class="form-group">
+                        {%  for meuble in meubles_odesk %}
+                            <input type="checkbox" name="{{ meuble }}" value="valuable" id="{{ meuble }}"/><label for="{{ meuble }}"></label>
+                        {%  else %}
+                            <p>Aucun meuble disponible</p>
+                        {%  endfor %}
+                    </div>
+
                     <div class="form-group">
                         <label for="message">votre demande :</label>
                         <textarea name="message" rows="3" cols="45" class="form-control" placeholder="Entrez votre message" required></textarea>
@@ -85,22 +96,12 @@
                     <label>Les modèles qui vous intéressent :</label>
 
                     <div class="form-group">
-                        <input type="checkbox" name="tabouret1" value="valuable" id="tabouret1"/><label for="tabouret1"></label>
-                        <input type="checkbox" name="tabouret2" value="valuable" id="tabouret2"/><label for="tabouret2"></label>
-                        <input type="checkbox" name="tabouret3" value="valuable" id="tabouret3"/><label for="tabouret3"></label>
-                        <input type="checkbox" name="tabouret4" value="valuable" id="tabouret4"/><label for="tabouret4"></label>
-                        <input type="checkbox" name="tabouret5" value="valuable" id="tabouret5"/><label for="tabouret5"></label>
-                    </div>
-
-                    <label>Les modèles qui vous intéressent :</label>
-
-                    <!--<div class="form-group">
-                        {% for meuble in meubles %}
+                        {%  for meuble in meubles_compagnie %}
                             <input type="checkbox" name="{{ meuble }}" value="valuable" id="{{ meuble }}"/><label for="{{ meuble }}"></label>
-                        {% else %}
-                        <p>Aucun meuble disponible</p>
-                        {% endfor %}
-                    </div>-->
+                        {%  else %}
+                            <p>Aucun meuble disponible</p>
+                        {%  endfor %}
+                    </div>
 
                     <div class="form-group">
                         <label for="message">votre demande :</label>

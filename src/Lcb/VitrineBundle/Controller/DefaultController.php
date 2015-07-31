@@ -74,6 +74,11 @@ class DefaultController extends Controller
          * pour l'instant on garde tout dans le même projet pour simplifier le développement.
 		*/
 
+        // TODO chercher les meubles de la compagnie et les meubles opendesk depuis la base de données.
+
+        $meubles_odesk = array('chaise1', 'chaise2', 'chaise3', 'chaise4', 'chaise5', 'chaise6', 'chaise7');
+        $meubles_compagnie = array('table1', 'table2', 'table3', 'table4', 'table5');
+
         $message = new message();
 
         $message->setDate(new \DateTime(date('Y-m-d H:i:s')));
@@ -82,7 +87,7 @@ class DefaultController extends Controller
 
         if ($request->getMethod() != 'POST')
         {
-            return $this->render('LcbVitrineBundle:Default:boutique.html.twig');
+            return $this->render('LcbVitrineBundle:Default:boutique.html.twig', array('meubles_odesk' => $meubles_odesk, 'meubles_compagnie' => $meubles_compagnie));
         }
 
         if (isset($_POST['openDesk']))
@@ -130,11 +135,7 @@ class DefaultController extends Controller
             return $this->redirect($this->generateUrl('lcb_merci'));
         }
 
-        // TODO chercher les meubles de la compagnie et les meubles opendesk depuis la base de données.
-
-        $meubles = array('tabouret1', 'tabouret2', 'tabouret3', 'tabouret4', 'tabouret5');
-
-		return $this->render('LcbVitrineBundle:Default:boutique.html.twig', array('meubles' => $meubles));
+		return $this->render('LcbVitrineBundle:Default:boutique.html.twig', array('meubles_odesk' => $meubles_odesk, 'meubles_compagnie' => $meubles_compagnie));
 	}
 
 	public function batarsAction()

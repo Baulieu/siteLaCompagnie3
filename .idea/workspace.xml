@@ -57,13 +57,10 @@
       <file leaf-file-name="DefaultController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Lcb/VitrineBundle/Controller/DefaultController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.222222" vertical-offset="1317" max-vertical-offset="3888">
-              <caret line="135" column="0" selection-start-line="135" selection-start-column="0" selection-end-line="135" selection-end-column="0" />
+            <state vertical-scroll-proportion="-52.0" vertical-offset="0" max-vertical-offset="4608">
+              <caret line="78" column="105" selection-start-line="78" selection-start-column="105" selection-end-line="78" selection-end-column="105" />
               <folding>
                 <element signature="e#48#105#0#PHP" expanded="true" />
-                <element signature="e#2706#3266#0#PHP" expanded="false" />
-                <element signature="e#3276#3859#0#PHP" expanded="false" />
-                <element signature="e#3869#4414#0#PHP" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -72,8 +69,8 @@
       <file leaf-file-name="boutique.html.twig" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Lcb/VitrineBundle/Resources/views/Default/boutique.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8167539" vertical-offset="1404" max-vertical-offset="3438">
-              <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.15706806" vertical-offset="0" max-vertical-offset="3528">
+              <caret line="5" column="90" selection-start-line="5" selection-start-column="90" selection-end-line="5" selection-end-column="90" />
               <folding />
             </state>
           </provider>
@@ -695,9 +692,6 @@
           <caret line="20" column="50" selection-start-line="20" selection-start-column="50" selection-end-line="20" selection-end-column="50" />
           <folding>
             <element signature="e#48#105#0#PHP" expanded="true" />
-            <element signature="e#2706#3266#0#PHP" expanded="false" />
-            <element signature="e#3276#3859#0#PHP" expanded="false" />
-            <element signature="e#3869#4414#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -750,9 +744,6 @@
           <caret line="20" column="50" selection-start-line="20" selection-start-column="50" selection-end-line="20" selection-end-column="50" />
           <folding>
             <element signature="e#48#105#0#PHP" expanded="true" />
-            <element signature="e#2706#3266#0#PHP" expanded="false" />
-            <element signature="e#3276#3859#0#PHP" expanded="false" />
-            <element signature="e#3869#4414#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -805,9 +796,6 @@
           <caret line="20" column="50" selection-start-line="20" selection-start-column="50" selection-end-line="20" selection-end-column="50" />
           <folding>
             <element signature="e#48#105#0#PHP" expanded="true" />
-            <element signature="e#2706#3266#0#PHP" expanded="false" />
-            <element signature="e#3276#3859#0#PHP" expanded="false" />
-            <element signature="e#3869#4414#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1051,21 +1039,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Lcb/VitrineBundle/Controller/DefaultController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.222222" vertical-offset="1317" max-vertical-offset="3888">
-          <caret line="135" column="0" selection-start-line="135" selection-start-column="0" selection-end-line="135" selection-end-column="0" />
+        <state vertical-scroll-proportion="-52.0" vertical-offset="0" max-vertical-offset="4608">
+          <caret line="78" column="105" selection-start-line="78" selection-start-column="105" selection-end-line="78" selection-end-column="105" />
           <folding>
             <element signature="e#48#105#0#PHP" expanded="true" />
-            <element signature="e#2706#3266#0#PHP" expanded="false" />
-            <element signature="e#3276#3859#0#PHP" expanded="false" />
-            <element signature="e#3869#4414#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Lcb/VitrineBundle/Resources/views/Default/boutique.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8167539" vertical-offset="1404" max-vertical-offset="3438">
-          <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.15706806" vertical-offset="0" max-vertical-offset="3528">
+          <caret line="5" column="90" selection-start-line="5" selection-start-column="90" selection-end-line="5" selection-end-column="90" />
           <folding />
         </state>
       </provider>

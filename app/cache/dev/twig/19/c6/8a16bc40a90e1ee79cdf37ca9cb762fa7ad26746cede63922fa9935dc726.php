@@ -23,6 +23,10 @@ class __TwigTemplate_19c68a16bc40a90e1ee79cdf37ca9cb762fa7ad26746cede63922fa9935
     <link href=\"//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css\" rel=\"stylesheet\">
     <link href=\"";
         // line 6
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/lcbvitrine/css/bootstrap.min.css"), "html", null, true);
+        echo "\" rel=\"stylesheet\">
+    <link href=\"";
+        // line 7
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/lcbvitrine/css/boutique.css"), "html", null, true);
         echo "\" rel=\"stylesheet\">
     <style type=\"text/css\">
@@ -69,6 +73,37 @@ class __TwigTemplate_19c68a16bc40a90e1ee79cdf37ca9cb762fa7ad26746cede63922fa9935
                         <input type=\"tel\" name=\"phone\" class=\"form-control\" placeholder=\"Entrez votre numéro de téléphone\">
                     </div>
 
+                    <label>Les modèles qui vous intéressent :</label>
+
+                    <div class=\"form-group\">
+                        ";
+        // line 55
+        $context['_parent'] = (array) $context;
+        $context['_seq'] = twig_ensure_traversable((isset($context["meubles_odesk"]) ? $context["meubles_odesk"] : $this->getContext($context, "meubles_odesk")));
+        $context['_iterated'] = false;
+        foreach ($context['_seq'] as $context["_key"] => $context["meuble"]) {
+            // line 56
+            echo "                            <input type=\"checkbox\" name=\"";
+            echo twig_escape_filter($this->env, $context["meuble"], "html", null, true);
+            echo "\" value=\"valuable\" id=\"";
+            echo twig_escape_filter($this->env, $context["meuble"], "html", null, true);
+            echo "\"/><label for=\"";
+            echo twig_escape_filter($this->env, $context["meuble"], "html", null, true);
+            echo "\"></label>
+                        ";
+            $context['_iterated'] = true;
+        }
+        if (!$context['_iterated']) {
+            // line 58
+            echo "                            <p>Aucun meuble disponible</p>
+                        ";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['meuble'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 60
+        echo "                    </div>
+
                     <div class=\"form-group\">
                         <label for=\"message\">votre demande :</label>
                         <textarea name=\"message\" rows=\"3\" cols=\"45\" class=\"form-control\" placeholder=\"Entrez votre message\" required></textarea>
@@ -106,18 +141,33 @@ class __TwigTemplate_19c68a16bc40a90e1ee79cdf37ca9cb762fa7ad26746cede63922fa9935
                     <label>Les modèles qui vous intéressent :</label>
 
                     <div class=\"form-group\">
-                        <input type=\"checkbox\" name=\"tabouret1\" value=\"valuable\" id=\"tabouret1\"/><label for=\"tabouret1\"></label>
-                        <input type=\"checkbox\" name=\"tabouret2\" value=\"valuable\" id=\"tabouret2\"/><label for=\"tabouret2\"></label>
-                        <input type=\"checkbox\" name=\"tabouret3\" value=\"valuable\" id=\"tabouret3\"/><label for=\"tabouret3\"></label>
-                        <input type=\"checkbox\" name=\"tabouret4\" value=\"valuable\" id=\"tabouret4\"/><label for=\"tabouret4\"></label>
-                        <input type=\"checkbox\" name=\"tabouret5\" value=\"valuable\" id=\"tabouret5\"/><label for=\"tabouret5\"></label>
-                    </div>
-
-                    <label>Les modèles qui vous intéressent :</label>
-
-                    <!--<div class=\"form-group\">
-
-                    </div>-->
+                        ";
+        // line 99
+        $context['_parent'] = (array) $context;
+        $context['_seq'] = twig_ensure_traversable((isset($context["meubles_compagnie"]) ? $context["meubles_compagnie"] : $this->getContext($context, "meubles_compagnie")));
+        $context['_iterated'] = false;
+        foreach ($context['_seq'] as $context["_key"] => $context["meuble"]) {
+            // line 100
+            echo "                            <input type=\"checkbox\" name=\"";
+            echo twig_escape_filter($this->env, $context["meuble"], "html", null, true);
+            echo "\" value=\"valuable\" id=\"";
+            echo twig_escape_filter($this->env, $context["meuble"], "html", null, true);
+            echo "\"/><label for=\"";
+            echo twig_escape_filter($this->env, $context["meuble"], "html", null, true);
+            echo "\"></label>
+                        ";
+            $context['_iterated'] = true;
+        }
+        if (!$context['_iterated']) {
+            // line 102
+            echo "                            <p>Aucun meuble disponible</p>
+                        ";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['meuble'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 104
+        echo "                    </div>
 
                     <div class=\"form-group\">
                         <label for=\"message\">votre demande :</label>
@@ -174,7 +224,7 @@ class __TwigTemplate_19c68a16bc40a90e1ee79cdf37ca9cb762fa7ad26746cede63922fa9935
 <script src=\"//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js\"></script>
 <script src=\"//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js\"></script>
 <script src=\"";
-        // line 155
+        // line 160
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/lcbvitrine/js/responsive-tabs.js"), "html", null, true);
         echo "\"></script>
 <script type=\"text/javascript\">
@@ -222,6 +272,6 @@ class __TwigTemplate_19c68a16bc40a90e1ee79cdf37ca9cb762fa7ad26746cede63922fa9935
 
     public function getDebugInfo()
     {
-        return array (  178 => 155,  26 => 6,  19 => 1,);
+        return array (  228 => 160,  170 => 104,  163 => 102,  151 => 100,  146 => 99,  105 => 60,  98 => 58,  86 => 56,  81 => 55,  30 => 7,  26 => 6,  19 => 1,);
     }
 }
